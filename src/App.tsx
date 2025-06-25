@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Trophy, TrendingUp, ArrowRight, ExternalLink, Code, Users, Palette, Clock, Target, Shield, CheckCircle } from 'lucide-react';
+import { Zap, Trophy, TrendingUp, ArrowRight, Code, Users, Palette, Clock, Target, Shield, CheckCircle } from 'lucide-react';
 import { BeforeAfterSlider } from './components/BeforeAfterSlider';
 import { CaseStudy } from './components/CaseStudy';
 
@@ -119,7 +119,7 @@ function App() {
                   SPEED
                 </h4>
                 <p className="text-[#A1A1A0]">
-                  We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in &lt;24 hours. Less waiting, more selling.
+                  We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in <24 hours. Less waiting, more selling.
                 </p>
               </div>
             </div>
@@ -169,22 +169,6 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Store Preview Call-Out */}
-      <section className="py-16 md:py-24 px-4 bg-[#1D1C1C]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-6">
-            Your New Store Is Ready—Click to Launch
-          </h2>
-          <p className="text-[#A1A1A0] text-lg mb-8">
-            preview.beautifullydone.com/your-store-id
-          </p>
-          <button className="border-2 border-[#F36103] text-[#F36103] hover:bg-[#F36103] hover:text-[#161616] px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-flex items-center space-x-2">
-            <span>View My Live Preview</span>
-            <ExternalLink size={20} />
-          </button>
         </div>
       </section>
 
