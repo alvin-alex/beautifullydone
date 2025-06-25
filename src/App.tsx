@@ -224,12 +224,14 @@ function App() {
           </button>
           
           {/* Bolt.new Badge */}
-          <div className="border-t border-[#595B5B]">
+          <div className="relative">
+            {/* Extended white line - 70% wider */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-[170%] h-px bg-[#595B5B]"></div>
             <a 
               href="https://bolt.new/?rid=236em2" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block hover:opacity-80 transition-opacity duration-200 pt-8"
+              className="inline-block hover:opacity-80 transition-opacity duration-200 pt-8 pb-[10px]"
             >
               <img 
                 src="https://i.imgur.com/IW2FOnu.png" 
