@@ -17,8 +17,11 @@ function App() {
   return (
     <div className="min-h-screen bg-[#161616] text-[#EEEDEC] tracking-wider">
       {/* Hero Section */}
-      <section className="h-screen bg-[#161616] flex items-center justify-center">
-        <div className="text-center max-w-4xl mx-auto px-4">
+      <section className="h-screen relative flex items-center justify-center">
+        {/* Subtle orange gradient background */}
+        <div className="absolute inset-0 bg-gradient-radial from-[#F36103]/5 via-transparent to-transparent"></div>
+        
+        <div className="relative text-center max-w-4xl mx-auto px-4 z-10">
           <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
             Get a Store You're <span className="text-[#F36103]">Proud Of</span><span className="font-light">—Live in</span> 24 Hours
           </h1>
@@ -40,7 +43,7 @@ function App() {
             onClick={handleCTAClick}
             className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 md:px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center md:space-x-3"
           >
-            <span>See AI Transform My Store Now</span>
+            <span>See My New Store</span>
             <ArrowRight size={20} className="hidden md:block ml-3" />
           </button>
         </div>
@@ -212,7 +215,7 @@ function App() {
             onClick={handleCTAClick}
             className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 md:px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center md:space-x-3 mb-8"
           >
-            <span>See AI Transform My Store Now</span>
+            <span>See My New Store</span>
             <ArrowRight size={20} className="hidden md:block ml-3" />
           </button>
           
@@ -227,7 +230,7 @@ function App() {
               className="inline-block hover:opacity-80 transition-opacity duration-200 pt-[10px] pb-[10px]"
             >
               <img 
-                src="/badge/logotext_poweredby_360w.png" 
+                src="https://i.imgur.com/IW2FOnu.png" 
                 alt="Built with Bolt" 
                 className="h-12"
               />
