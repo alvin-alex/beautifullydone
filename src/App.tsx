@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Zap, Trophy, TrendingUp, ArrowRight, Code, Users, Palette, Clock, Target, Shield, CheckCircle } from 'lucide-react';
 import { BeforeAfterSlider } from './components/BeforeAfterSlider';
-import { CaseStudy } from './components/CaseStudy';
 import { StoreTransformationForm } from './components/StoreTransformationForm';
 
 function App() {
@@ -186,29 +185,6 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Case Studies */}
-      <section className="py-8 px-4">
-        <div className="max-w-6xl mx-auto">
-          <CaseStudy
-            storeName="Artisan Jewelry Co."
-            beforeImage="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800"
-            afterImage="https://images.pexels.com/photos/5632371/pexels-photo-5632371.jpeg?auto=compress&cs=tinysrgb&w=800"
-          />
-
-          <CaseStudy
-            storeName="Urban Coffee Roasters"
-            beforeImage="https://images.pexels.com/photos/4109743/pexels-photo-4109743.jpeg?auto=compress&cs=tinysrgb&w=800"
-            afterImage="https://images.pexels.com/photos/4109744/pexels-photo-4109744.jpeg?auto=compress&cs=tinysrgb&w=800"
-          />
-
-          <CaseStudy
-            storeName="Handmade Ceramics Studio"
-            beforeImage="https://images.pexels.com/photos/4207892/pexels-photo-4207892.jpeg?auto=compress&cs=tinysrgb&w=800"
-            afterImage="https://images.pexels.com/photos/4207893/pexels-photo-4207893.jpeg?auto=compress&cs=tinysrgb&w=800"
-          />
         </div>
       </section>
 
