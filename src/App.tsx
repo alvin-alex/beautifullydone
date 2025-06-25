@@ -26,7 +26,9 @@ function App() {
               Get a Store You're <span className="text-[#F36103]">Proud Of</span><span className="font-light">—Live in</span> 24 Hours
             </h1>
             <h2 className="text-xl md:text-2xl text-[#A1A1A0] mb-8 max-w-3xl mx-auto">
-              No pitch. No proposals. Just your new store—live and ready to sell.
+              No pitch. No proposals. Just your new store
+              <br />
+              —live and ready to sell.
             </h2>
             <button 
               onClick={handleCTAClick}
