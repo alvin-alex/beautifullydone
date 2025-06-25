@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Trophy, TrendingUp, ArrowRight, ExternalLink } from 'lucide-react';
+import { Zap, Trophy, TrendingUp, ArrowRight, ExternalLink, Code, Users, Palette, Clock, Target, Shield, CheckCircle } from 'lucide-react';
 import { BeforeAfterSlider } from './components/BeforeAfterSlider';
 import { CaseStudy } from './components/CaseStudy';
 
@@ -10,7 +10,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#161616] text-[#EEEDEC]">
+    <div className="min-h-screen bg-[#161616] text-[#EEEDEC] tracking-wider">
       {/* Hero Section */}
       <section className="h-screen relative overflow-hidden">
         <BeforeAfterSlider
@@ -46,7 +46,7 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-6">
               Your store needs an upgrade...
             </h2>
-            <p className="text-xl text-[#A1A1A0] mb-8">
+            <p className="text-xl text-[#A1A1A0] mb-16">
               ...However, you're already running a business.
               <br />And that takes all your time!
             </p>
@@ -55,35 +55,50 @@ function App() {
             </h3>
           </div>
 
-          <div className="space-y-8 mb-12">
+          <div className="space-y-8 mb-16">
             {/* Option 1 */}
-            <div className="border-l-4 border-[#595B5B] pl-6">
-              <h4 className="text-xl font-bold text-[#F36103] mb-3">
-                BUILD IT YOURSELF?
-              </h4>
-              <p className="text-[#A1A1A0] text-lg">
-                If you have months to spare, it's not a problem. However, if you're actually running a business... this isn't realistic.
-              </p>
+            <div className="border-l-4 border-[#595B5B] pl-6 flex items-start space-x-4">
+              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <Code size={24} className="text-[#161616]" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                  BUILD IT YOURSELF?
+                </h4>
+                <p className="text-[#A1A1A0] text-lg">
+                  If you have months to spare, it's not a problem. However, if you're actually running a business... this isn't realistic.
+                </p>
+              </div>
             </div>
 
             {/* Option 2 */}
-            <div className="border-l-4 border-[#595B5B] pl-6">
-              <h4 className="text-xl font-bold text-[#F36103] mb-3">
-                HIRE A DEVELOPER?
-              </h4>
-              <p className="text-[#A1A1A0] text-lg">
-                Finding good developers is expensive, vetting them is time-consuming. Even if you find the perfect person... You're still waiting 3-6 months and hoping they understand e-commerce.
-              </p>
+            <div className="border-l-4 border-[#595B5B] pl-6 flex items-start space-x-4">
+              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <Users size={24} className="text-[#161616]" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                  HIRE A DEVELOPER?
+                </h4>
+                <p className="text-[#A1A1A0] text-lg">
+                  Finding good developers is expensive, vetting them is time-consuming. Even if you find the perfect person... You're still waiting 3-6 months and hoping they understand e-commerce.
+                </p>
+              </div>
             </div>
 
             {/* Option 3 */}
-            <div className="border-l-4 border-[#595B5B] pl-6">
-              <h4 className="text-xl font-bold text-[#F36103] mb-3">
-                USE A TEMPLATE?
-              </h4>
-              <p className="text-[#A1A1A0] text-lg">
-                Don't have $20K+ for custom design? Well then you get the same template as 10,000 other stores. Not exactly built to convert your specific audience.
-              </p>
+            <div className="border-l-4 border-[#595B5B] pl-6 flex items-start space-x-4">
+              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <Palette size={24} className="text-[#161616]" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                  USE A TEMPLATE?
+                </h4>
+                <p className="text-[#A1A1A0] text-lg">
+                  Don't have $20K+ for custom design? Well then you get the same template as 10,000 other stores. Not exactly built to convert your specific audience.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -95,83 +110,63 @@ function App() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Differentiator 1 */}
-            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B]">
-              <h4 className="text-xl font-bold text-[#F36103] mb-3">
-                SPEED
-              </h4>
-              <p className="text-[#A1A1A0]">
-                We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in &lt;24 hours. Less waiting, more selling.
-              </p>
+            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B] flex items-start space-x-4">
+              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0">
+                <Clock size={24} className="text-[#161616]" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                  SPEED
+                </h4>
+                <p className="text-[#A1A1A0]">
+                  We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in <24 hours. Less waiting, more selling.
+                </p>
+              </div>
             </div>
 
             {/* Differentiator 2 */}
-            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B]">
-              <h4 className="text-xl font-bold text-[#F36103] mb-3">
-                PROVEN
-              </h4>
-              <p className="text-[#A1A1A0]">
-                Our first priority is results. Every design element is based on real conversion data from stores that actually sell. Less guessing, more converting.
-              </p>
+            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B] flex items-start space-x-4">
+              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0">
+                <Target size={24} className="text-[#161616]" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                  PROVEN
+                </h4>
+                <p className="text-[#A1A1A0]">
+                  Our first priority is results. Every design element is based on real conversion data from stores that actually sell. Less guessing, more converting.
+                </p>
+              </div>
             </div>
 
             {/* Differentiator 3 */}
-            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B]">
-              <h4 className="text-xl font-bold text-[#F36103] mb-3">
-                EFFORTLESS
-              </h4>
-              <p className="text-[#A1A1A0]">
-                You're not managing a project or dealing with revisions. Send us your current store URL, and you get a new one back. That's it.
-              </p>
+            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B] flex items-start space-x-4">
+              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0">
+                <CheckCircle size={24} className="text-[#161616]" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                  EFFORTLESS
+                </h4>
+                <p className="text-[#A1A1A0]">
+                  You're not managing a project or dealing with revisions. Send us your current store URL, and you get a new one back. That's it.
+                </p>
+              </div>
             </div>
 
             {/* Differentiator 4 */}
-            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B]">
-              <h4 className="text-xl font-bold text-[#F36103] mb-3">
-                GUARANTEED
-              </h4>
-              <p className="text-[#A1A1A0]">
-                We only win if you win. That's the basis for a good partnership. You won't carry all the risk, we'll share it with our results guarantee.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Value Props Section */}
-      <section className="py-16 md:py-24 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {/* Speed */}
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#F36103] rounded-full flex items-center justify-center">
-                <Zap size={32} className="text-[#161616]" />
+            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B] flex items-start space-x-4">
+              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0">
+                <Shield size={24} className="text-[#161616]" />
               </div>
-              <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4">Speed</h3>
-              <p className="text-[#A1A1A0] text-lg leading-relaxed">
-                We crawl 1,000+ stores/day and rebuild yours in &lt;24 hours.
-              </p>
-            </div>
-
-            {/* Quality */}
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#F36103] rounded-full flex items-center justify-center">
-                <Trophy size={32} className="text-[#161616]" />
+              <div>
+                <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                  GUARANTEED
+                </h4>
+                <p className="text-[#A1A1A0]">
+                  We only win if you win. That's the basis for a good partnership. You won't carry all the risk, we'll share it with our results guarantee.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4">Quality</h3>
-              <p className="text-[#A1A1A0] text-lg leading-relaxed">
-                Agency-grade design & copy—A/B tested on real buyers.
-              </p>
-            </div>
-
-            {/* ROI */}
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#F36103] rounded-full flex items-center justify-center">
-                <TrendingUp size={32} className="text-[#161616]" />
-              </div>
-              <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4">ROI</h3>
-              <p className="text-[#A1A1A0] text-lg leading-relaxed">
-                39.5% opens → 2.4% clicks → 5–15% MRR growth/mo.
-              </p>
             </div>
           </div>
         </div>
