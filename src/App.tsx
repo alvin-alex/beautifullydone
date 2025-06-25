@@ -231,7 +231,7 @@ function App() {
               href="https://bolt.new/?rid=236em2" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block hover:opacity-80 transition-opacity duration-200 pt-8 pb-[10px]"
+              className="inline-block hover:opacity-80 transition-opacity duration-200 pt-[10px] pb-[10px]"
             >
               <img 
                 src="https://i.imgur.com/IW2FOnu.png" 
