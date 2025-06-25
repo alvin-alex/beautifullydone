@@ -48,7 +48,7 @@ function App() {
               onClick={handleCTAClick}
               className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 md:px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center md:space-x-3"
             >
-              <span>See AI Transform My Store Now</span>
+              <span>See My New Store</span>
               <ArrowRight size={20} className="hidden md:block ml-3" />
             </button>
           </div>
@@ -198,7 +198,7 @@ function App() {
             onClick={handleCTAClick}
             className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 md:px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center md:space-x-3 mb-8"
           >
-            <span>See AI Transform My Store Now</span>
+            <span>See My New Store</span>
             <ArrowRight size={20} className="hidden md:block ml-3" />
           </button>
           

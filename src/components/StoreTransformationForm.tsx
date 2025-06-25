@@ -234,7 +234,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               </>
             ) : (
               <>
-                <span>Transform My Store Now</span>
+                <span>See My New Store</span>
                 <ArrowRight size={20} />
               </>
             )}
