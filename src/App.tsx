@@ -3,7 +3,6 @@ import { Zap, Trophy, TrendingUp, Star, ArrowRight, ExternalLink } from 'lucide-
 import { BeforeAfterSlider } from './components/BeforeAfterSlider';
 import { TestimonialCarousel } from './components/TestimonialCarousel';
 import { CaseStudy } from './components/CaseStudy';
-import { StickyFooter } from './components/StickyFooter';
 
 function App() {
   const handleCTAClick = () => {
@@ -195,9 +194,6 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* Sticky Footer */}
-      <StickyFooter />
     </div>
   );
 }
