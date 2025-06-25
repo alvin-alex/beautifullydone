@@ -255,6 +255,7 @@ function App() {
         </div>
       </section>
     </div>
+  )
   );
 }
 
