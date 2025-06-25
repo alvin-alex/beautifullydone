@@ -17,18 +17,15 @@ function App() {
   return (
     <div className="min-h-screen bg-[#161616] text-[#EEEDEC] tracking-wider">
       {/* Hero Section */}
-      <section className="h-screen relative overflow-hidden">
+      <section className="h-screen relative overflow-hidden bg-[#161616]">
         <BeforeAfterSlider
           beforeImage="https://images.pexels.com/photos/3962285/pexels-photo-3962285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           afterImage="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           className="absolute inset-0"
         />
         
-        {/* Subtle Orange Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-radial from-orange-900/20 via-orange-900/5 to-transparent"></div>
-        
         {/* Hero Content Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center max-w-4xl mx-auto px-4">
             <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
               Get a Store You're <span className="text-[#F36103]">Proud Of</span><span className="font-light">—Live in</span> 24 Hours
@@ -192,7 +189,7 @@ function App() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="pt-16 md:pt-24 px-4 text-center">
+      <section className="pt-16 md:pt-24 px-4 text-center bg-[#161616]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-8">
             Ready for your dream store?
