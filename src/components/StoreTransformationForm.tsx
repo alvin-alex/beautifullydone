@@ -89,10 +89,23 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
     onClose();
   };
 
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    // Only close if clicking directly on the backdrop, not on child elements
+    if (e.target === e.currentTarget) {
+      handleClose();
+    }
+  };
+
   if (isSubmitted) {
     return (
-      <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-        <div className="bg-[#1D1C1C] rounded-lg p-8 max-w-md w-full border border-[#595B5B] text-center">
+      <div 
+        className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+        onClick={handleBackdropClick}
+      >
+        <div 
+          className="bg-[#1D1C1C] rounded-lg p-8 max-w-md w-full border border-[#595B5B] text-center"
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className="w-16 h-16 bg-[#F36103] rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle size={32} className="text-[#161616]" />
           </div>
@@ -117,8 +130,14 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-      <div className="bg-[#1D1C1C] rounded-lg p-8 max-w-lg w-full border border-[#595B5B] relative max-h-[90vh] overflow-y-auto">
+    <div 
+      className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+      onClick={handleBackdropClick}
+    >
+      <div 
+        className="bg-[#1D1C1C] rounded-lg p-8 max-w-lg w-full border border-[#595B5B] relative max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Close Button */}
         <button
           onClick={handleClose}
