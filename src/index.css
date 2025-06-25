@@ -2,3 +2,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Base styles */
+html {
+  @apply bg-[#161616] overflow-x-hidden scroll-smooth;
+}
+
+body {
+  @apply bg-[#161616] overflow-x-hidden antialiased;
+  font-family: 'ClashDisplay-Variable', 'Inter', system-ui, sans-serif;
+}
+
+/* Prevent any content from causing horizontal scrolling */
+* {
+  @apply max-w-full;
+}
+
+/* Fix for mobile viewport issues */
+@media (max-width: 768px) {
+  html, body {
+    @apply overflow-x-hidden;
+    width: 100%;
+    position: relative;
+  }
+}
+
+/* Selection styles */
+::selection {
+  @apply bg-[#F36103] text-[#161616];
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#1D1C1C];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#595B5B] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#F36103];
+}
