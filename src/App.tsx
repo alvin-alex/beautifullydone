@@ -23,8 +23,8 @@ function App() {
         {/* Hero Content Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Get a Store You're Proud Of—Live in 24 Hours
+            <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
+              Get a Store You're <span className="text-[#F36103]">Proud Of</span>—Live in 24 Hours
             </h1>
             <h2 className="text-xl md:text-2xl text-[#A1A1A0] mb-8 max-w-3xl mx-auto">
               No pitch. No proposals. Just your new store—live and ready to sell.
@@ -51,7 +51,7 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4">Speed</h3>
               <p className="text-[#A1A1A0] text-lg leading-relaxed">
-                We crawl 1,000+ stores/day and rebuild yours in 1 hour.
+                We crawl 1,000+ stores/day and rebuild yours in &lt;24 hour.
               </p>
             </div>
 
@@ -188,7 +188,7 @@ function App() {
               <img 
                 src="https://i.imgur.com/IW2FOnu.png" 
                 alt="Built with Bolt" 
-                className="h-8"
+                className="h-12"
               />
             </a>
           </div>
