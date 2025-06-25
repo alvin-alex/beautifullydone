@@ -208,7 +208,7 @@ function App() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 md:py-24 px-4 text-center">
+      <section className="pt-16 md:pt-24 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-8">
             Ready for your dream store?
@@ -222,12 +222,12 @@ function App() {
           </button>
           
           {/* Bolt.new Badge */}
-          <div className="border-t border-[#595B5B] pt-8">
+          <div className="border-t border-[#595B5B]">
             <a 
               href="https://bolt.new/?rid=236em2" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block hover:opacity-80 transition-opacity duration-200"
+              className="inline-block hover:opacity-80 transition-opacity duration-200 pt-8"
             >
               <img 
                 src="https://i.imgur.com/IW2FOnu.png" 
@@ -239,7 +239,6 @@ function App() {
         </div>
       </section>
     </div>
-  )
   );
 }
 
