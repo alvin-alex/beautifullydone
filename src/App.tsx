@@ -119,7 +119,7 @@ function App() {
                   SPEED
                 </h4>
                 <p className="text-[#A1A1A0] text-lg">
-                  We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in {'<'}24 hours. Less waiting, more selling.
+                  We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in under 24 hours. Less waiting, more selling.
                 </p>
               </div>
             </div>
