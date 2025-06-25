@@ -1,41 +1,4 @@
 @import './clash-display.css';
-@import './styles/components.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Base styles */
-html {
-  @apply scroll-smooth;
-}
-
-body {
-  @apply font-sans bg-bg-primary text-text-primary antialiased;
-}
-
-/* Focus styles for accessibility */
-*:focus {
-  @apply outline-none;
-}
-
-/* Selection styles */
-::selection {
-  @apply bg-brand-primary text-text-inverse;
-}
-
-/* Scrollbar styles */
-::-webkit-scrollbar {
-  @apply w-2;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-bg-secondary;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-border-primary rounded-full;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-brand-primary;
-}
