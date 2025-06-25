@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Zap, Trophy, TrendingUp, ArrowRight, Code, Users, Palette, Clock, Target, Shield, CheckCircle } from 'lucide-react';
 import { BeforeAfterSlider } from './components/BeforeAfterSlider';
 import { CaseStudy } from './components/CaseStudy';
+import { StoreTransformationForm } from './components/StoreTransformationForm';
 
 function App() {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   const handleCTAClick = () => {
-    // Scroll to hero section or handle form submission
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsFormOpen(true);
+  };
+
+  const handleCloseForm = () => {
+    setIsFormOpen(false);
   };
 
   return (
@@ -251,6 +257,12 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Store Transformation Form Modal */}
+      <StoreTransformationForm 
+        isOpen={isFormOpen} 
+        onClose={handleCloseForm} 
+      />
     </div>
   );
 }
