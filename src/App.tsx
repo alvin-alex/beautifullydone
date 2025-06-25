@@ -237,7 +237,7 @@ function App() {
               className="inline-block hover:opacity-80 transition-opacity duration-200 pt-[10px] pb-[10px]"
             >
               <img 
-                src="/badge/logotext_poweredby_360w.png" 
+                src="https://i.imgur.com/IW2FOnu.png" 
                 alt="Built with Bolt" 
                 className="h-12"
               />
