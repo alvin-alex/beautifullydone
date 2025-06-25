@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: ['ClashDisplay-Variable', 'Inter', 'system-ui', 'sans-serif'],
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       colors: {
         primary: {
           bg: '#161616',
