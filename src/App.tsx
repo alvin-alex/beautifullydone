@@ -196,30 +196,18 @@ function App() {
             storeName="Artisan Jewelry Co."
             beforeImage="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800"
             afterImage="https://images.pexels.com/photos/5632371/pexels-photo-5632371.jpeg?auto=compress&cs=tinysrgb&w=800"
-            conversionLift="340"
-            avgOrderValueLift="85"
-            trafficSalesLift="220"
-            ownerQuote="We went from 2 sales a month to 15 sales a day. The design completely changed our business."
           />
 
           <CaseStudy
             storeName="Urban Coffee Roasters"
             beforeImage="https://images.pexels.com/photos/4109743/pexels-photo-4109743.jpeg?auto=compress&cs=tinysrgb&w=800"
             afterImage="https://images.pexels.com/photos/4109744/pexels-photo-4109744.jpeg?auto=compress&cs=tinysrgb&w=800"
-            conversionLift="280"
-            avgOrderValueLift="120"
-            trafficSalesLift="195"
-            ownerQuote="Our subscription orders tripled within the first month. The new site converted visitors we were losing before."
           />
 
           <CaseStudy
             storeName="Handmade Ceramics Studio"
             beforeImage="https://images.pexels.com/photos/4207892/pexels-photo-4207892.jpeg?auto=compress&cs=tinysrgb&w=800"
             afterImage="https://images.pexels.com/photos/4207893/pexels-photo-4207893.jpeg?auto=compress&cs=tinysrgb&w=800"
-            conversionLift="425"
-            avgOrderValueLift="65"
-            trafficSalesLift="310"
-            ownerQuote="I couldn't believe how professional it looked. Customers started placing bigger orders immediately."
           />
         </div>
       </section>

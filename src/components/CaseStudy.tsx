@@ -4,20 +4,12 @@ interface CaseStudyProps {
   storeName: string;
   beforeImage: string;
   afterImage: string;
-  conversionLift: string;
-  avgOrderValueLift: string;
-  trafficSalesLift: string;
-  ownerQuote: string;
 }
 
 export const CaseStudy: React.FC<CaseStudyProps> = ({
   storeName,
   beforeImage,
-  afterImage,
-  conversionLift,
-  avgOrderValueLift,
-  trafficSalesLift,
-  ownerQuote
+  afterImage
 }) => {
   return (
     <section className="bg-[#1D1C1C] p-6 md:p-8 my-8 rounded-lg border border-[#595B5B]">
@@ -47,22 +39,6 @@ export const CaseStudy: React.FC<CaseStudyProps> = ({
           </span>
         </div>
       </div>
-
-      <ul className="text-[#A1A1A0] space-y-2 mb-4">
-        <li>
-          <strong className="text-[#EEEDEC]">Conversion Lift:</strong> +{conversionLift}%
-        </li>
-        <li>
-          <strong className="text-[#EEEDEC]">Avg. Order Value Lift:</strong> +{avgOrderValueLift}%
-        </li>
-        <li>
-          <strong className="text-[#EEEDEC]">Traffic→Sales Lift:</strong> +{trafficSalesLift}%
-        </li>
-      </ul>
-
-      <p className="text-[#EEEDEC] italic text-lg">
-        "{ownerQuote}"
-      </p>
     </section>
   );
 };
