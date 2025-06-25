@@ -112,10 +112,10 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
           <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4">
             We're On It!
           </h3>
-          <p className="text-[#A1A1A0] mb-6 leading-relaxed">
+          <p className="text-[#B5B5B4] mb-6 leading-relaxed">
             Thanks {formData.name}! We've received your store details and will have your transformation ready within 24 hours.
           </p>
-          <p className="text-[#A1A1A0] mb-8 text-sm">
+          <p className="text-[#B5B5B4] mb-8 text-sm">
             Check your email for next steps and timeline updates.
           </p>
           <button
@@ -141,7 +141,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
         {/* Close Button */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-[#A1A1A0] hover:text-[#F36103] transition-colors duration-200"
+          className="absolute top-4 right-4 text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200"
         >
           <X size={24} />
         </button>
@@ -151,7 +151,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
           <h2 className="text-3xl font-bold text-[#EEEDEC] mb-3">
             Transform Your Store in <span className="text-[#F36103]">24 Hours</span>
           </h2>
-          <p className="text-[#A1A1A0] text-lg">
+          <p className="text-[#B5B5B4] text-lg">
             Just need a few details to get started on your store transformation.
           </p>
         </div>
@@ -168,7 +168,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               id="name"
               value={formData.name}
               onChange={(e) => handleInputChange('name', e.target.value)}
-              className={`w-full px-4 py-3 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#A1A1A0] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 ${
+              className={`w-full px-4 py-3 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 ${
                 errors.name ? 'border-red-500' : 'border-[#595B5B]'
               }`}
               placeholder="Enter your full name"
@@ -188,7 +188,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               id="email"
               value={formData.email}
               onChange={(e) => handleInputChange('email', e.target.value)}
-              className={`w-full px-4 py-3 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#A1A1A0] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 ${
+              className={`w-full px-4 py-3 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 ${
                 errors.email ? 'border-red-500' : 'border-[#595B5B]'
               }`}
               placeholder="Enter your email address"
@@ -208,7 +208,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               id="storeUrl"
               value={formData.storeUrl}
               onChange={(e) => handleInputChange('storeUrl', e.target.value)}
-              className={`w-full px-4 py-3 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#A1A1A0] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 ${
+              className={`w-full px-4 py-3 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 ${
                 errors.storeUrl ? 'border-red-500' : 'border-[#595B5B]'
               }`}
               placeholder="https://yourstore.com"
@@ -216,7 +216,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             {errors.storeUrl && (
               <p className="text-red-500 text-sm mt-1">{errors.storeUrl}</p>
             )}
-            <p className="text-[#A1A1A0] text-sm mt-1">
+            <p className="text-[#B5B5B4] text-sm mt-1">
               We'll analyze your current store to create the perfect transformation.
             </p>
           </div>

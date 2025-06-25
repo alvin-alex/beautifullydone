@@ -30,7 +30,7 @@ function App() {
             <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
               Get a Store You're <span className="text-[#F36103]">Proud Of</span><span className="font-light">—Live in</span> 24 Hours
             </h1>
-            <h2 className="text-xl md:text-2xl text-[#A1A1A0] mb-8 max-w-3xl mx-auto">
+            <h2 className="text-xl md:text-2xl text-[#B5B5B4] mb-8 max-w-3xl mx-auto">
               {/* Mobile version */}
               <span className="md:hidden">
                 No pitch. No proposals.
@@ -62,7 +62,7 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold text-[#EEEDEC] mb-6">
               Your store needs an upgrade...
             </h2>
-            <p className="text-2xl text-[#A1A1A0] mb-40">
+            <p className="text-2xl text-[#B5B5B4] mb-40">
               ...However, you're already running a business.
               <br />And that takes all your time!
             </p>
@@ -81,7 +81,7 @@ function App() {
                 <h4 className="text-2xl font-bold text-[#F36103] mb-3">
                   BUILD IT YOURSELF?
                 </h4>
-                <p className="text-[#A1A1A0] text-xl">
+                <p className="text-[#B5B5B4] text-xl">
                   If you have months to spare, it's not a problem. However, if you're actually running a business... this isn't realistic.
                 </p>
               </div>
@@ -96,7 +96,7 @@ function App() {
                 <h4 className="text-2xl font-bold text-[#F36103] mb-3">
                   HIRE A DEVELOPER?
                 </h4>
-                <p className="text-[#A1A1A0] text-xl">
+                <p className="text-[#B5B5B4] text-xl">
                   Finding good developers is expensive, vetting them is time-consuming. Even if you find the perfect person... You're still waiting 3-6 months and hoping they understand e-commerce.
                 </p>
               </div>
@@ -111,7 +111,7 @@ function App() {
                 <h4 className="text-2xl font-bold text-[#F36103] mb-3">
                   USE A TEMPLATE?
                 </h4>
-                <p className="text-[#A1A1A0] text-xl">
+                <p className="text-[#B5B5B4] text-xl">
                   Don't have $20K+ for custom design? Well then you get the same template as 10,000 other stores. Not exactly built to convert your specific audience.
                 </p>
               </div>
@@ -134,7 +134,7 @@ function App() {
                 <h4 className="text-2xl font-bold text-[#F36103] mb-3">
                   SPEED
                 </h4>
-                <p className="text-[#A1A1A0] text-lg">
+                <p className="text-[#B5B5B4] text-lg">
                   We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in under 24 hours. Less waiting, more selling.
                 </p>
               </div>
@@ -149,7 +149,7 @@ function App() {
                 <h4 className="text-2xl font-bold text-[#F36103] mb-3">
                   PROVEN
                 </h4>
-                <p className="text-[#A1A1A0] text-lg">
+                <p className="text-[#B5B5B4] text-lg">
                   Our first priority is results. Every design element is based on real conversion data from stores that actually sell. Less guessing, more converting.
                 </p>
               </div>
@@ -164,7 +164,7 @@ function App() {
                 <h4 className="text-2xl font-bold text-[#F36103] mb-3">
                   EFFORTLESS
                 </h4>
-                <p className="text-[#A1A1A0] text-lg">
+                <p className="text-[#B5B5B4] text-lg">
                   You're not managing a project or dealing with revisions. Send us your current store URL, and get a new one back. That's it.
                 </p>
               </div>
@@ -179,7 +179,7 @@ function App() {
                 <h4 className="text-2xl font-bold text-[#F36103] mb-3">
                   GUARANTEED
                 </h4>
-                <p className="text-[#A1A1A0] text-lg">
+                <p className="text-[#B5B5B4] text-lg">
                   We only win if you win. That's the basis for a good partnership. You won't carry all the risk, we'll share it with our results guarantee.
                 </p>
               </div>
