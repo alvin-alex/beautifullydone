@@ -43,6 +43,43 @@
   @apply w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center flex-shrink-0;
 }
 
+/* Typography Classes */
+.text-display-2xl {
+  @apply text-display-2xl font-bold text-text-primary;
+}
+
+.text-display-xl {
+  @apply text-display-xl font-bold text-text-primary;
+}
+
+.text-display-lg {
+  @apply text-display-lg font-semibold text-text-primary;
+}
+
+.text-display-md {
+  @apply text-display-md font-semibold text-text-primary;
+}
+
+.text-heading-xl {
+  @apply text-heading-xl font-semibold text-text-primary;
+}
+
+.text-heading-lg {
+  @apply text-heading-lg font-medium text-text-primary;
+}
+
+.text-body-xl {
+  @apply text-body-xl text-text-secondary;
+}
+
+.text-body-lg {
+  @apply text-body-lg text-text-secondary;
+}
+
+.text-body-muted {
+  @apply text-body-lg text-text-muted;
+}
+
 /* Section Layouts */
 .section {
   @apply py-16 md:py-24 px-4;
