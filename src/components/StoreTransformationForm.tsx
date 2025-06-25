@@ -103,7 +103,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
         onClick={handleBackdropClick}
       >
         <div 
-          className="bg-[#1D1C1C] rounded-lg p-8 max-w-md w-full border border-[#595B5B] text-center"
+          className="bg-[#161616] rounded-lg p-8 max-w-md w-full border border-[#595B5B] text-center"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="w-16 h-16 bg-[#F36103] rounded-full flex items-center justify-center mx-auto mb-6">
@@ -135,7 +135,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
       onClick={handleBackdropClick}
     >
       <div 
-        className="bg-[#1D1C1C] rounded-lg p-8 max-w-lg w-full border border-[#595B5B] relative max-h-[90vh] overflow-y-auto"
+        className="bg-[#161616] rounded-lg p-8 max-w-lg w-full border border-[#595B5B] relative max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}

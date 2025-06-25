@@ -59,7 +59,7 @@ function App() {
       </section>
 
       {/* Problem-Solution Section */}
-      <section className="py-16 md:py-24 px-4 bg-[#1D1C1C] tracking-[0.08em]">
+      <section className="py-16 md:py-24 px-4 bg-[#161616] tracking-[0.08em]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-[#EEEDEC] mb-6">
