@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Zap, Trophy, TrendingUp, ArrowRight, Code, Users, Palette, Clock, Target, Shield, CheckCircle } from 'lucide-react';
-import { BeforeAfterSlider } from './components/BeforeAfterSlider';
+import { CaseStudy } from './components/CaseStudy';
 import { StoreTransformationForm } from './components/StoreTransformationForm';
 
 function App() {
@@ -17,41 +17,32 @@ function App() {
   return (
     <div className="min-h-screen bg-[#161616] text-[#EEEDEC] tracking-wider">
       {/* Hero Section */}
-      <section className="h-screen relative overflow-hidden bg-[#161616]">
-        <BeforeAfterSlider
-          beforeImage="https://images.pexels.com/photos/3962285/pexels-photo-3962285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          afterImage="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          className="absolute inset-0"
-        />
-        
-        {/* Hero Content Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="text-center max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
-              Get a Store You're <span className="text-[#F36103]">Proud Of</span><span className="font-light">—Live in</span> 24 Hours
-            </h1>
-            <h2 className="text-xl md:text-2xl text-[#B5B5B4] mb-8 max-w-3xl mx-auto">
-              {/* Mobile version */}
-              <span className="md:hidden">
-                No pitch. No proposals.
-                <br />
-                Just your new store—live and ready to sell.
-              </span>
-              {/* Desktop version */}
-              <span className="hidden md:block">
-                No pitch. No proposals. Just your new store
-                <br />
-                —live and ready to sell.
-              </span>
-            </h2>
-            <button 
-              onClick={handleCTAClick}
-              className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 md:px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center md:space-x-3"
-            >
-              <span>See My New Store</span>
-              <ArrowRight size={20} className="hidden md:block ml-3" />
-            </button>
-          </div>
+      <section className="h-screen bg-[#161616] flex items-center justify-center">
+        <div className="text-center max-w-4xl mx-auto px-4">
+          <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
+            Get a Store You're <span className="text-[#F36103]">Proud Of</span><span className="font-light">—Live in</span> 24 Hours
+          </h1>
+          <h2 className="text-xl md:text-2xl text-[#B5B5B4] mb-8 max-w-3xl mx-auto">
+            {/* Mobile version */}
+            <span className="md:hidden">
+              No pitch. No proposals.
+              <br />
+              Just your new store—live and ready to sell.
+            </span>
+            {/* Desktop version */}
+            <span className="hidden md:block">
+              No pitch. No proposals. Just your new store
+              <br />
+              —live and ready to sell.
+            </span>
+          </h2>
+          <button 
+            onClick={handleCTAClick}
+            className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 md:px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center md:space-x-3"
+          >
+            <span>See AI Transform My Store Now</span>
+            <ArrowRight size={20} className="hidden md:block ml-3" />
+          </button>
         </div>
       </section>
 
@@ -188,8 +179,31 @@ function App() {
         </div>
       </section>
 
+      {/* Case Studies */}
+      <section className="py-8 px-4">
+        <div className="max-w-6xl mx-auto">
+          <CaseStudy
+            storeName="Artisan Jewelry Co."
+            beforeImage="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800"
+            afterImage="https://images.pexels.com/photos/5632371/pexels-photo-5632371.jpeg?auto=compress&cs=tinysrgb&w=800"
+          />
+
+          <CaseStudy
+            storeName="Urban Coffee Roasters"
+            beforeImage="https://images.pexels.com/photos/4109743/pexels-photo-4109743.jpeg?auto=compress&cs=tinysrgb&w=800"
+            afterImage="https://images.pexels.com/photos/4109744/pexels-photo-4109744.jpeg?auto=compress&cs=tinysrgb&w=800"
+          />
+
+          <CaseStudy
+            storeName="Handmade Ceramics Studio"
+            beforeImage="https://images.pexels.com/photos/4207892/pexels-photo-4207892.jpeg?auto=compress&cs=tinysrgb&w=800"
+            afterImage="https://images.pexels.com/photos/4207893/pexels-photo-4207893.jpeg?auto=compress&cs=tinysrgb&w=800"
+          />
+        </div>
+      </section>
+
       {/* Final CTA Section */}
-      <section className="pt-16 md:pt-24 px-4 text-center bg-[#161616]">
+      <section className="pt-16 md:pt-24 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-8">
             Ready for your dream store?
@@ -198,7 +212,7 @@ function App() {
             onClick={handleCTAClick}
             className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 md:px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center md:space-x-3 mb-8"
           >
-            <span>See My New Store</span>
+            <span>See AI Transform My Store Now</span>
             <ArrowRight size={20} className="hidden md:block ml-3" />
           </button>
           
@@ -213,7 +227,7 @@ function App() {
               className="inline-block hover:opacity-80 transition-opacity duration-200 pt-[10px] pb-[10px]"
             >
               <img 
-                src="https://i.imgur.com/IW2FOnu.png" 
+                src="/badge/logotext_poweredby_360w.png" 
                 alt="Built with Bolt" 
                 className="h-12"
               />
