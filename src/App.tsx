@@ -2,15 +2,18 @@ import React from 'react';
 import { Zap, Trophy, TrendingUp, ArrowRight, Code, Users, Palette, Clock, Target, Shield, CheckCircle } from 'lucide-react';
 import { BeforeAfterSlider } from './components/BeforeAfterSlider';
 import { CaseStudy } from './components/CaseStudy';
+import { Button } from './components/Button';
+import { IconContainer } from './components/IconContainer';
+import { Section } from './components/Section';
+import { Container } from './components/Container';
 
 function App() {
   const handleCTAClick = () => {
-    // Scroll to hero section or handle form submission
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <div className="min-h-screen bg-[#161616] text-[#EEEDEC] tracking-wider">
+    <div className="min-h-screen bg-bg-primary text-text-primary">
       {/* Hero Section */}
       <section className="h-screen relative overflow-hidden">
         <BeforeAfterSlider
@@ -21,83 +24,86 @@ function App() {
         
         {/* Hero Content Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="text-center max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
-              Get a Store You're <span className="text-[#F36103]">Proud Of</span><span className="font-light">—Live in</span> 24 Hours
+          <Container className="text-center">
+            <h1 className="text-display-xl md:text-display-2xl font-bold mb-6 leading-tight">
+              Get a Store You're <span className="text-gradient">Proud Of</span>
+              <span className="font-light">—Live in</span> 24 Hours
             </h1>
-            <h2 className="text-xl md:text-2xl text-[#A1A1A0] mb-8 max-w-3xl mx-auto">
+            <h2 className="text-body-xl md:text-heading-xl text-text-secondary mb-8 max-w-3xl mx-auto">
               No pitch. No proposals. Just your new store
               <br />
               —live and ready to sell.
             </h2>
-            <button 
+            <Button 
+              variant="primary"
+              size="large"
               onClick={handleCTAClick}
-              className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center space-x-3"
+              className="shadow-lg hover:shadow-xl"
             >
               <span>See AI Transform My Store Now</span>
               <ArrowRight size={20} />
-            </button>
-          </div>
+            </Button>
+          </Container>
         </div>
       </section>
 
       {/* Problem-Solution Section */}
-      <section className="py-16 md:py-24 px-4 bg-[#1D1C1C] tracking-[0.08em]">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#EEEDEC] mb-6">
-              Your store needs an upgrade...
-            </h2>
-            <p className="text-2xl text-[#A1A1A0] mb-40">
-              ...However, you're already running a business.
-              <br />And that takes all your time!
-            </p>
-            <h3 className="text-3xl md:text-4xl font-semibold text-[#EEEDEC] mb-12">
-              So How Do You Get a Store That Actually Converts?
-            </h3>
-          </div>
+      <Section variant="alt" className="space-y-16">
+        <Container narrow className="text-center">
+          <h2 className="text-display-lg md:text-display-xl font-bold mb-6">
+            Your store needs an upgrade...
+          </h2>
+          <p className="text-heading-xl text-text-secondary mb-40">
+            ...However, you're already running a business.
+            <br />And that takes all your time!
+          </p>
+          <h3 className="text-display-md md:text-display-lg font-semibold mb-12">
+            So How Do You Get a Store That Actually Converts?
+          </h3>
+        </Container>
 
+        <Container narrow>
           <div className="space-y-8 mb-48">
             {/* Option 1 */}
-            <div className="border-l-4 border-[#595B5B] pl-6 flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <Code size={24} className="text-[#161616]" />
-              </div>
+            <div className="card border-l-4 border-l-border-accent pl-6 flex items-start gap-4">
+              <IconContainer>
+                <Code size={24} className="text-text-inverse" />
+              </IconContainer>
               <div>
-                <h4 className="text-2xl font-bold text-[#F36103] mb-3">
+                <h4 className="text-heading-xl font-bold text-brand-primary mb-3">
                   BUILD IT YOURSELF?
                 </h4>
-                <p className="text-[#A1A1A0] text-xl">
+                <p className="text-body-xl text-text-secondary">
                   If you have months to spare, it's not a problem. However, if you're actually running a business... this isn't realistic.
                 </p>
               </div>
             </div>
 
             {/* Option 2 */}
-            <div className="border-l-4 border-[#595B5B] pl-6 flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <Users size={24} className="text-[#161616]" />
-              </div>
+            <div className="card border-l-4 border-l-border-accent pl-6 flex items-start gap-4">
+              <IconContainer>
+                <Users size={24} className="text-text-inverse" />
+              </IconContainer>
               <div>
-                <h4 className="text-2xl font-bold text-[#F36103] mb-3">
+                <h4 className="text-heading-xl font-bold text-brand-primary mb-3">
                   HIRE A DEVELOPER?
                 </h4>
-                <p className="text-[#A1A1A0] text-xl">
+                <p className="text-body-xl text-text-secondary">
                   Finding good developers is expensive, vetting them is time-consuming. Even if you find the perfect person... You're still waiting 3-6 months and hoping they understand e-commerce.
                 </p>
               </div>
             </div>
 
             {/* Option 3 */}
-            <div className="border-l-4 border-[#595B5B] pl-6 flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <Palette size={24} className="text-[#161616]" />
-              </div>
+            <div className="card border-l-4 border-l-border-accent pl-6 flex items-start gap-4">
+              <IconContainer>
+                <Palette size={24} className="text-text-inverse" />
+              </IconContainer>
               <div>
-                <h4 className="text-2xl font-bold text-[#F36103] mb-3">
+                <h4 className="text-heading-xl font-bold text-brand-primary mb-3">
                   USE A TEMPLATE?
                 </h4>
-                <p className="text-[#A1A1A0] text-xl">
+                <p className="text-body-xl text-text-secondary">
                   Don't have $20K+ for custom design? Well then you get the same template as 10,000 other stores. Not exactly built to convert your specific audience.
                 </p>
               </div>
@@ -105,78 +111,78 @@ function App() {
           </div>
 
           <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-semibold text-[#EEEDEC] mb-8">
+            <h3 className="text-display-md md:text-display-lg font-semibold mb-8">
               "OK... But What Makes You Different?"
             </h3>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid-2">
             {/* Differentiator 1 */}
-            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B] flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0">
-                <Clock size={24} className="text-[#161616]" />
-              </div>
+            <div className="card card-hover flex items-start gap-4">
+              <IconContainer>
+                <Clock size={24} className="text-text-inverse" />
+              </IconContainer>
               <div>
-                <h4 className="text-2xl font-bold text-[#F36103] mb-3">
+                <h4 className="text-heading-xl font-bold text-brand-primary mb-3">
                   SPEED
                 </h4>
-                <p className="text-[#A1A1A0] text-lg">
+                <p className="text-body-lg text-text-secondary">
                   We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in under 24 hours. Less waiting, more selling.
                 </p>
               </div>
             </div>
 
             {/* Differentiator 2 */}
-            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B] flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0">
-                <Target size={24} className="text-[#161616]" />
-              </div>
+            <div className="card card-hover flex items-start gap-4">
+              <IconContainer>
+                <Target size={24} className="text-text-inverse" />
+              </IconContainer>
               <div>
-                <h4 className="text-2xl font-bold text-[#F36103] mb-3">
+                <h4 className="text-heading-xl font-bold text-brand-primary mb-3">
                   PROVEN
                 </h4>
-                <p className="text-[#A1A1A0] text-lg">
+                <p className="text-body-lg text-text-secondary">
                   Our first priority is results. Every design element is based on real conversion data from stores that actually sell. Less guessing, more converting.
                 </p>
               </div>
             </div>
 
             {/* Differentiator 3 */}
-            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B] flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0">
-                <CheckCircle size={24} className="text-[#161616]" />
-              </div>
+            <div className="card card-hover flex items-start gap-4">
+              <IconContainer>
+                <CheckCircle size={24} className="text-text-inverse" />
+              </IconContainer>
               <div>
-                <h4 className="text-2xl font-bold text-[#F36103] mb-3">
+                <h4 className="text-heading-xl font-bold text-brand-primary mb-3">
                   EFFORTLESS
                 </h4>
-                <p className="text-[#A1A1A0] text-lg">
+                <p className="text-body-lg text-text-secondary">
                   You're not managing a project or dealing with revisions. Send us your current store URL, and you get a new one back. That's it.
                 </p>
               </div>
             </div>
 
             {/* Differentiator 4 */}
-            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B] flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0">
-                <Shield size={24} className="text-[#161616]" />
-              </div>
+            <div className="card card-hover flex items-start gap-4">
+              <IconContainer>
+                <Shield size={24} className="text-text-inverse" />
+              </IconContainer>
               <div>
-                <h4 className="text-2xl font-bold text-[#F36103] mb-3">
+                <h4 className="text-heading-xl font-bold text-brand-primary mb-3">
                   GUARANTEED
                 </h4>
-                <p className="text-[#A1A1A0] text-lg">
+                <p className="text-body-lg text-text-secondary">
                   We only win if you win. That's the basis for a good partnership. You won't carry all the risk, we'll share it with our results guarantee.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* Case Studies */}
-      <section className="py-8 px-4">
-        <div className="max-w-6xl mx-auto">
+      <Section>
+        <Container>
           <CaseStudy
             storeName="Artisan Jewelry Co."
             beforeImage="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -206,32 +212,33 @@ function App() {
             trafficSalesLift="310"
             ownerQuote="I couldn't believe how professional it looked. Customers started placing bigger orders immediately."
           />
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* Final CTA Section */}
-      <section className="pt-16 md:pt-24 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-8">
+      <Section>
+        <Container narrow className="text-center">
+          <h2 className="text-display-md md:text-display-lg font-bold mb-8">
             Ready for your dream store?
           </h2>
-          <button 
+          <Button 
+            variant="primary"
+            size="large"
             onClick={handleCTAClick}
-            className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center space-x-3 mb-8"
+            className="mb-8 shadow-lg hover:shadow-xl"
           >
             <span>See AI Transform My Store Now</span>
             <ArrowRight size={20} />
-          </button>
+          </Button>
           
           {/* Bolt.new Badge */}
-          <div className="relative">
-            {/* Extended white line - 70% wider */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-[170%] h-px bg-[#595B5B]"></div>
+          <div className="relative pt-8">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-[170%] h-px bg-border-primary top-0"></div>
             <a 
               href="https://bolt.new/?rid=236em2" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block hover:opacity-80 transition-opacity duration-200 pt-[10px] pb-[10px]"
+              className="inline-block hover:opacity-80 transition-opacity duration-200 pt-8 pb-2 focus-ring rounded-lg"
             >
               <img 
                 src="https://i.imgur.com/IW2FOnu.png" 
@@ -240,8 +247,8 @@ function App() {
               />
             </a>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { cn } from '../utils/cn';
 
 interface CaseStudyProps {
   storeName: string;
@@ -8,6 +9,7 @@ interface CaseStudyProps {
   avgOrderValueLift: string;
   trafficSalesLift: string;
   ownerQuote: string;
+  className?: string;
 }
 
 export const CaseStudy: React.FC<CaseStudyProps> = ({
@@ -17,22 +19,23 @@ export const CaseStudy: React.FC<CaseStudyProps> = ({
   conversionLift,
   avgOrderValueLift,
   trafficSalesLift,
-  ownerQuote
+  ownerQuote,
+  className
 }) => {
   return (
-    <section className="bg-[#1D1C1C] p-6 md:p-8 my-8 rounded-lg border border-[#595B5B]">
-      <h3 className="text-[#EEEDEC] text-2xl font-medium mb-6">
+    <section className={cn("card my-8 space-y-6", className)}>
+      <h3 className="text-heading-xl font-semibold text-text-primary">
         Case Study: {storeName}
       </h3>
       
-      <div className="grid md:grid-cols-2 gap-4 mb-6 overflow-hidden rounded-lg border-2 border-[#595B5B]">
+      <div className="grid md:grid-cols-2 gap-1 overflow-hidden rounded-lg border-2 border-border-primary">
         <div className="relative">
           <img 
             src={beforeImage} 
             alt="Before" 
             className="w-full h-48 md:h-64 object-cover"
           />
-          <span className="absolute bottom-0 left-0 bg-[#F36103] text-[#161616] px-3 py-2 font-medium">
+          <span className="absolute bottom-0 left-0 bg-brand-primary text-text-inverse px-3 py-2 text-body-md font-medium">
             Before
           </span>
         </div>
@@ -42,27 +45,27 @@ export const CaseStudy: React.FC<CaseStudyProps> = ({
             alt="After" 
             className="w-full h-48 md:h-64 object-cover"
           />
-          <span className="absolute bottom-0 right-0 bg-[#F36103] text-[#161616] px-3 py-2 font-medium">
+          <span className="absolute bottom-0 right-0 bg-brand-primary text-text-inverse px-3 py-2 text-body-md font-medium">
             After
           </span>
         </div>
       </div>
 
-      <ul className="text-[#A1A1A0] space-y-2 mb-4">
-        <li>
-          <strong className="text-[#EEEDEC]">Conversion Lift:</strong> +{conversionLift}%
-        </li>
-        <li>
-          <strong className="text-[#EEEDEC]">Avg. Order Value Lift:</strong> +{avgOrderValueLift}%
-        </li>
-        <li>
-          <strong className="text-[#EEEDEC]">Traffic→Sales Lift:</strong> +{trafficSalesLift}%
-        </li>
-      </ul>
+      <div className="space-y-2">
+        <div className="text-body-lg text-text-secondary">
+          <strong className="text-text-primary">Conversion Lift:</strong> +{conversionLift}%
+        </div>
+        <div className="text-body-lg text-text-secondary">
+          <strong className="text-text-primary">Avg. Order Value Lift:</strong> +{avgOrderValueLift}%
+        </div>
+        <div className="text-body-lg text-text-secondary">
+          <strong className="text-text-primary">Traffic→Sales Lift:</strong> +{trafficSalesLift}%
+        </div>
+      </div>
 
-      <p className="text-[#EEEDEC] italic text-lg">
+      <blockquote className="text-body-xl text-text-primary italic border-l-4 border-brand-primary pl-4">
         "{ownerQuote}"
-      </p>
+      </blockquote>
     </section>
   );
 };

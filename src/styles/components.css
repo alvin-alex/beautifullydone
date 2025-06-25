@@ -1,0 +1,151 @@
+/* Design System Component Styles */
+
+/* Button Variants */
+.btn-primary {
+  @apply bg-brand-primary hover:bg-brand-primary-dark text-text-inverse px-6 py-3 rounded-lg font-medium transition-all duration-200 inline-flex items-center justify-center gap-3 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-bg-primary;
+}
+
+.btn-secondary {
+  @apply border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-text-inverse px-6 py-3 rounded-lg font-medium transition-all duration-200 inline-flex items-center justify-center gap-3 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-bg-primary;
+}
+
+.btn-ghost {
+  @apply text-text-primary hover:text-brand-primary px-6 py-3 rounded-lg font-medium transition-all duration-200 inline-flex items-center justify-center gap-3 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-bg-primary;
+}
+
+.btn-large {
+  @apply px-8 py-4 text-body-xl;
+}
+
+.btn-small {
+  @apply px-4 py-2 text-body-md;
+}
+
+/* Card Components */
+.card {
+  @apply bg-bg-secondary border border-border-primary rounded-xl p-6 transition-all duration-200;
+}
+
+.card-hover {
+  @apply hover:border-border-accent hover:shadow-lg;
+}
+
+.card-featured {
+  @apply bg-bg-tertiary border-brand-primary;
+}
+
+/* Icon Containers */
+.icon-container {
+  @apply w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center flex-shrink-0;
+}
+
+.icon-container-large {
+  @apply w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center flex-shrink-0;
+}
+
+/* Typography Classes */
+.text-display-2xl {
+  @apply text-display-2xl font-bold text-text-primary;
+}
+
+.text-display-xl {
+  @apply text-display-xl font-bold text-text-primary;
+}
+
+.text-display-lg {
+  @apply text-display-lg font-semibold text-text-primary;
+}
+
+.text-display-md {
+  @apply text-display-md font-semibold text-text-primary;
+}
+
+.text-heading-xl {
+  @apply text-heading-xl font-semibold text-text-primary;
+}
+
+.text-heading-lg {
+  @apply text-heading-lg font-medium text-text-primary;
+}
+
+.text-body-xl {
+  @apply text-body-xl text-text-secondary;
+}
+
+.text-body-lg {
+  @apply text-body-lg text-text-secondary;
+}
+
+.text-body-muted {
+  @apply text-body-lg text-text-muted;
+}
+
+/* Section Layouts */
+.section {
+  @apply py-16 md:py-24 px-4;
+}
+
+.section-alt {
+  @apply py-16 md:py-24 px-4 bg-bg-secondary;
+}
+
+.container {
+  @apply max-w-6xl mx-auto;
+}
+
+.container-narrow {
+  @apply max-w-4xl mx-auto;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  @apply grid md:grid-cols-2 gap-6 md:gap-8;
+}
+
+.grid-3 {
+  @apply grid md:grid-cols-3 gap-6 md:gap-8;
+}
+
+.grid-4 {
+  @apply grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8;
+}
+
+/* Interactive States */
+.interactive {
+  @apply transition-all duration-200 cursor-pointer;
+}
+
+.interactive:hover {
+  @apply transform scale-105;
+}
+
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-bg-primary;
+}
+
+/* Loading States */
+.loading {
+  @apply opacity-50 pointer-events-none;
+}
+
+.spinner {
+  @apply animate-spin rounded-full h-6 w-6 border-b-2 border-brand-primary;
+}
+
+/* Animations */
+.fade-in {
+  @apply animate-fade-in;
+}
+
+.slide-up {
+  @apply animate-slide-up;
+}
+
+/* Utility Classes */
+.text-gradient {
+  @apply bg-gradient-to-r from-brand-primary to-brand-primary-light bg-clip-text text-transparent;
+}
+
+.border-glow {
+  @apply border-brand-primary shadow-glow;
+}
