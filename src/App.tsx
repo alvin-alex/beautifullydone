@@ -39,6 +39,104 @@ function App() {
         </div>
       </section>
 
+      {/* Problem-Solution Section */}
+      <section className="py-16 md:py-24 px-4 bg-[#1D1C1C]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-6">
+              Your store needs an upgrade...
+            </h2>
+            <p className="text-xl text-[#A1A1A0] mb-8">
+              ...However, you're already running a business.
+              <br />And that takes all your time!
+            </p>
+            <h3 className="text-2xl md:text-3xl font-semibold text-[#EEEDEC] mb-12">
+              So How Do You Get a Store That Actually Converts?
+            </h3>
+          </div>
+
+          <div className="space-y-8 mb-12">
+            {/* Option 1 */}
+            <div className="border-l-4 border-[#595B5B] pl-6">
+              <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                BUILD IT YOURSELF?
+              </h4>
+              <p className="text-[#A1A1A0] text-lg">
+                If you have months to spare, it's not a problem. However, if you're actually running a business... this isn't realistic.
+              </p>
+            </div>
+
+            {/* Option 2 */}
+            <div className="border-l-4 border-[#595B5B] pl-6">
+              <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                HIRE A DEVELOPER?
+              </h4>
+              <p className="text-[#A1A1A0] text-lg">
+                Finding good developers is expensive, vetting them is time-consuming. Even if you find the perfect person... You're still waiting 3-6 months and hoping they understand e-commerce.
+              </p>
+            </div>
+
+            {/* Option 3 */}
+            <div className="border-l-4 border-[#595B5B] pl-6">
+              <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                USE A TEMPLATE?
+              </h4>
+              <p className="text-[#A1A1A0] text-lg">
+                Don't have $20K+ for custom design? Well then you get the same template as 10,000 other stores. Not exactly built to convert your specific audience.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-semibold text-[#EEEDEC] mb-8">
+              "OK... But What Makes You Different?"
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Differentiator 1 */}
+            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B]">
+              <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                SPEED
+              </h4>
+              <p className="text-[#A1A1A0]">
+                We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in &lt;24 hours. Less waiting, more selling.
+              </p>
+            </div>
+
+            {/* Differentiator 2 */}
+            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B]">
+              <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                PROVEN
+              </h4>
+              <p className="text-[#A1A1A0]">
+                Our first priority is results. Every design element is based on real conversion data from stores that actually sell. Less guessing, more converting.
+              </p>
+            </div>
+
+            {/* Differentiator 3 */}
+            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B]">
+              <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                EFFORTLESS
+              </h4>
+              <p className="text-[#A1A1A0]">
+                You're not managing a project or dealing with revisions. Send us your current store URL, and you get a new one back. That's it.
+              </p>
+            </div>
+
+            {/* Differentiator 4 */}
+            <div className="bg-[#161616] p-6 rounded-lg border border-[#595B5B]">
+              <h4 className="text-xl font-bold text-[#F36103] mb-3">
+                GUARANTEED
+              </h4>
+              <p className="text-[#A1A1A0]">
+                We only win if you win. That's the basis for a good partnership. You won't carry all the risk, we'll share it with our results guarantee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Value Props Section */}
       <section className="py-16 md:py-24 px-4">
         <div className="max-w-6xl mx-auto">
