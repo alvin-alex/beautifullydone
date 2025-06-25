@@ -151,7 +151,7 @@ function App() {
                   EFFORTLESS
                 </h4>
                 <p className="text-[#A1A1A0] text-lg">
-                  You're not managing a project or dealing with revisions. Send us your current store URL, and you get a new one back. That's it.
+                  You're not managing a project or dealing with revisions. Send us your current store URL, and get a new one back. That's it.
                 </p>
               </div>
             </div>
