@@ -221,24 +221,6 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             )}
           </button>
         </form>
-
-        {/* Trust Indicators */}
-        <div className="mt-8 pt-6 border-t border-[#595B5B]">
-          <div className="grid grid-cols-3 gap-4 text-center">
-            <div>
-              <div className="text-[#F36103] font-bold text-lg">24h</div>
-              <div className="text-[#A1A1A0] text-sm">Turnaround</div>
-            </div>
-            <div>
-              <div className="text-[#F36103] font-bold text-lg">100%</div>
-              <div className="text-[#A1A1A0] text-sm">Satisfaction</div>
-            </div>
-            <div>
-              <div className="text-[#F36103] font-bold text-lg">500+</div>
-              <div className="text-[#A1A1A0] text-sm">Stores Done</div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
