@@ -50,7 +50,7 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4">Speed</h3>
               <p className="text-[#A1A1A0] text-lg leading-relaxed">
-                We crawl 1,000+ stores/day and rebuild yours in <24 hour.
+                We crawl 1,000+ stores/day and rebuild yours in &lt;24 hours.
               </p>
             </div>
 
@@ -162,7 +162,6 @@ function App() {
         </div>
       </section>
     </div>
-  )
   );
 }
 
