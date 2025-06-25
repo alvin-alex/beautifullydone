@@ -48,7 +48,7 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold text-[#EEEDEC] mb-6">
               Your store needs an upgrade...
             </h2>
-            <p className="text-2xl text-[#A1A1A0] mb-16">
+            <p className="text-2xl text-[#A1A1A0] mb-20">
               ...However, you're already running a business.
               <br />And that takes all your time!
             </p>
@@ -57,7 +57,7 @@ function App() {
             </h3>
           </div>
 
-          <div className="space-y-8 mb-16">
+          <div className="space-y-8 mb-24">
             {/* Option 1 */}
             <div className="border-l-4 border-[#595B5B] pl-6 flex items-start space-x-4">
               <div className="w-12 h-12 bg-[#F36103] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
