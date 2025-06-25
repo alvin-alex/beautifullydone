@@ -1,7 +1,6 @@
 import React from 'react';
-import { Zap, Trophy, TrendingUp, Star, ArrowRight, ExternalLink } from 'lucide-react';
+import { Zap, Trophy, TrendingUp, ArrowRight, ExternalLink } from 'lucide-react';
 import { BeforeAfterSlider } from './components/BeforeAfterSlider';
-import { TestimonialCarousel } from './components/TestimonialCarousel';
 import { CaseStudy } from './components/CaseStudy';
 
 function App() {
@@ -51,7 +50,7 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4">Speed</h3>
               <p className="text-[#A1A1A0] text-lg leading-relaxed">
-                We crawl 1,000+ stores/day and rebuild yours in &lt;24 hour.
+                We crawl 1,000+ stores/day and rebuild yours in <24 hour.
               </p>
             </div>
 
@@ -80,38 +79,6 @@ function App() {
         </div>
       </section>
 
-      {/* Social Proof Bar */}
-      <section className="bg-[#1D1C1C] py-8 px-4 border-y border-[#595B5B]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-[#EEEDEC] mb-2">100+</div>
-              <div className="text-[#A1A1A0]">Stores Live</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-[#EEEDEC] mb-2">240%</div>
-              <div className="text-[#A1A1A0]">Avg. First-Month Sales Lift</div>
-            </div>
-            <div>
-              <div className="flex justify-center items-center space-x-1 mb-2">
-                <span className="text-3xl font-bold text-[#EEEDEC]">4.8</span>
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={24} className="text-[#F36103] fill-current" />
-                ))}
-              </div>
-              <div className="text-[#A1A1A0]">Average Rating</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial Carousel */}
-      <section className="py-16 md:py-24 px-4">
-        <div className="max-w-6xl mx-auto">
-          <TestimonialCarousel />
-        </div>
-      </section>
-
       {/* Store Preview Call-Out */}
       <section className="py-16 md:py-24 px-4 bg-[#1D1C1C]">
         <div className="max-w-4xl mx-auto text-center">
@@ -129,7 +96,7 @@ function App() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-16 md:py-24 px-4">
+      <section className="py-8 px-4">
         <div className="max-w-6xl mx-auto">
           <CaseStudy
             storeName="Artisan Jewelry Co."
@@ -178,7 +145,7 @@ function App() {
           </button>
           
           {/* Bolt.new Badge */}
-          <div className="pt-8 border-t border-[#595B5B]">
+          <div className="border-t border-[#595B5B] pt-8">
             <a 
               href="https://bolt.new/?rid=236em2" 
               target="_blank" 
