@@ -70,7 +70,7 @@ function App() {
             {/* Agitation Section */}
             <div className="mt-16 mb-16">
               <h2 className="text-2xl md:text-3xl font-bold text-[#EEEDEC] mb-8 text-center">
-                Agitation: You're Already Overwhelmed.
+                You're Already Overwhelmed.
               </h2>
               
               <p className="text-base text-[#C4C4C2] mb-8 text-center max-w-3xl mx-auto">
