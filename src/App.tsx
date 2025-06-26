@@ -57,7 +57,7 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold text-[#F36103] mb-6">
               Your store needs an upgrade...
             </h2>
-            <p className="text-2xl text-[#B5B5B4] mb-[200px]">
+            <p className="text-2xl text-[#B5B5B4] mb-[400px]">
               ...However, you're already running a business.
               <br />And that takes all your time!
             </p>
