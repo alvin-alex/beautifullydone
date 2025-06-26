@@ -262,7 +262,7 @@ function App() {
 
       {/* Bolt.new Badge */}
       <div className="bg-[#161616] py-4">
-        <div className="relative max-w-4xl mx-auto text-center">
+        <div className="relative max-w-6xl mx-auto text-center">
           {/* Line above copyright - matches footer line width */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-full h-px bg-[#595B5B]"></div>
           
