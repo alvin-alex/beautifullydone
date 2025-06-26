@@ -27,7 +27,9 @@ function App() {
           <h2 className="text-xl md:text-2xl text-[#B5B5B4] mb-8 max-w-3xl mx-auto">
             {/* Mobile version */}
             <span className="md:hidden">
-              No tech headaches. No agency fees.
+              No tech headaches. 
+              <br /> 
+              No agency fees.
               <br />
               Just your new store—live and ready to sell.
             </span>
