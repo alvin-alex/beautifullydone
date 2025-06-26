@@ -27,13 +27,13 @@ function App() {
           <h2 className="text-xl md:text-2xl text-[#B5B5B4] mb-8 max-w-3xl mx-auto">
             {/* Mobile version */}
             <span className="md:hidden">
-              No pitch. No proposals.
+              No tech headaches. No agency fees.
               <br />
               Just your new store—live and ready to sell.
             </span>
             {/* Desktop version */}
             <span className="hidden md:block">
-              No pitch. No proposals. Just your new store
+              No tech headaches. No agency fees. Just your new store
               <br />
               —live and ready to sell.
             </span>
