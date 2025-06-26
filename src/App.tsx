@@ -57,10 +57,15 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold text-[#F36103] mb-6">
               Your store needs an upgrade...
             </h2>
-            <p className="text-2xl text-[#B5B5B4] mb-[400px]">
+            <p className="text-2xl text-[#B5B5B4] mb-16">
               ...However, you're already running a business.
               <br />And that takes all your time!
             </p>
+
+            {/* Vertical fade line */}
+            <div className="flex justify-center mb-[320px]">
+              <div className="w-px h-32 bg-gradient-to-b from-[#F36103] via-[#F36103]/50 to-transparent"></div>
+            </div>
 
             {/* Agitation Section */}
             <div className="mt-16 mb-16">
