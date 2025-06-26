@@ -567,7 +567,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             key={index}
             className={`transition-all duration-300 rounded-full ${
               index === currentStep
-                ? 'w-2 h-6 bg-[#F36103]' // Active: stretched vertically and orange
+                ? 'w-6 h-2 bg-[#F36103]' // Active: stretched horizontally and orange
                 : index < currentStep
                 ? 'w-2 h-2 bg-[#F36103] opacity-60' // Completed: orange but smaller
                 : 'w-2 h-2 bg-[#595B5B]' // Inactive: grey
