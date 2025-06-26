@@ -349,12 +349,11 @@ function App() {
             </div>
 
             {/* Pages */}
-            <div className="md:col-span-1">
-      />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
 
 export default App;
-  )
-}
