@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Zap, Trophy, TrendingUp, ArrowRight, Code, Users, Palette, Clock, Target, Shield, CheckCircle } from 'lucide-react';
+import { Zap, Trophy, TrendingUp, ArrowRight, Code, Users, Palette, Clock, Target, Shield, CheckCircle, X } from 'lucide-react';
 import { StoreTransformationForm } from './components/StoreTransformationForm';
 
 function App() {
@@ -178,6 +178,65 @@ function App() {
                   We only win if you win. That's the basis for a good partnership. You won't carry all the risk, we'll share it with our results guarantee.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Agitation Section */}
+      <section className="py-16 md:py-24 px-4 bg-[#161616]">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#EEEDEC] mb-8 text-center">
+            Agitation: You're Already Overwhelmed.
+          </h2>
+          
+          <p className="text-base text-[#B5B5B4] mb-8 text-center max-w-3xl mx-auto">
+            You're running promotions, managing orders, and answering customer questions—while your website struggles to keep up. Every minute lost on a clunky store is revenue left on the table.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Card 1: Outdated Design */}
+            <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
+              <X size={20} className="absolute top-4 left-4 text-red-500" />
+              <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                Outdated Design
+              </h3>
+              <p className="text-sm text-[#B5B5B4]">
+                Tired layouts and old templates repel first-time visitors before they click "Add to Cart."
+              </p>
+            </div>
+            
+            {/* Card 2: Confusing Navigation */}
+            <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
+              <X size={20} className="absolute top-4 left-4 text-red-500" />
+              <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                Confusing Navigation
+              </h3>
+              <p className="text-sm text-[#B5B5B4]">
+                Buried menus and jargon-filled pages lead to abandoned carts and frustrated customers.
+              </p>
+            </div>
+            
+            {/* Card 3: Missed Sales Opportunities */}
+            <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
+              <X size={20} className="absolute top-4 left-4 text-red-500" />
+              <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                Missed Sales Opportunities
+              </h3>
+              <p className="text-sm text-[#B5B5B4]">
+                Delayed updates and slow page loads mean you can't capitalize on peak buying moments.
+              </p>
+            </div>
+            
+            {/* Card 4: Hidden Costs & Delays */}
+            <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
+              <X size={20} className="absolute top-4 left-4 text-red-500" />
+              <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                Hidden Costs & Delays
+              </h3>
+              <p className="text-sm text-[#B5B5B4]">
+                Freelancers and DIY templates drain your budget and schedule, with no conversion guarantees.
+              </p>
             </div>
           </div>
         </div>
