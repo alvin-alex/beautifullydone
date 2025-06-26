@@ -265,16 +265,16 @@ function App() {
       {/* Footer Section */}
       <footer className="pt-16 md:pt-24 pb-8 md:pb-12 px-4 bg-[#161616] border-t border-[#6B6B6B]">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12 mb-12">
+          <div className="max-w-md mx-auto mb-12">
             {/* Newsletter Signup */}
-            <div className="md:col-span-1">
-              <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4">
+            <div>
+              <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4 text-center">
                 Join our newsletter
               </h3>
-              <p className="text-[#C4C4C2] mb-2">
+              <p className="text-[#C4C4C2] mb-2 text-center">
                 Get updates on store transformations, conversion tips, and exclusive offers.
               </p>
-              <p className="text-[#C4C4C2] text-sm mb-6">
+              <p className="text-[#C4C4C2] text-sm mb-6 text-center">
                 Don't worry, we hate spam too.
               </p>
               
@@ -289,31 +289,9 @@ function App() {
                 </button>
               </div>
               
-              <p className="text-[#8A8A8A] text-xs mt-4 leading-relaxed">
+              <p className="text-[#8A8A8A] text-xs mt-4 leading-relaxed text-center">
                 We need your contact information to send you updates about our services. You may unsubscribe from these communications at any time.
               </p>
-            </div>
-
-            {/* Company Links */}
-            <div>
-              <h4 className="text-lg font-semibold text-[#EEEDEC] mb-4">Company</h4>
-              <ul className="space-y-3">
-                <li><a href="#" className="text-[#C4C4C2] hover:text-[#FF6B0A] focus:text-[#FF6B0A] focus:outline-none transition-colors duration-200">About Us</a></li>
-                <li><a href="#" className="text-[#C4C4C2] hover:text-[#FF6B0A] focus:text-[#FF6B0A] focus:outline-none transition-colors duration-200">How It Works</a></li>
-                <li><a href="#" className="text-[#C4C4C2] hover:text-[#FF6B0A] focus:text-[#FF6B0A] focus:outline-none transition-colors duration-200">Pricing</a></li>
-                <li><a href="#" className="text-[#C4C4C2] hover:text-[#FF6B0A] focus:text-[#FF6B0A] focus:outline-none transition-colors duration-200">Case Studies</a></li>
-              </ul>
-            </div>
-
-            {/* Support Links */}
-            <div>
-              <h4 className="text-lg font-semibold text-[#EEEDEC] mb-4">Support</h4>
-              <ul className="space-y-3">
-                <li><a href="#" className="text-[#C4C4C2] hover:text-[#FF6B0A] focus:text-[#FF6B0A] focus:outline-none transition-colors duration-200">Help Center</a></li>
-                <li><a href="#" className="text-[#C4C4C2] hover:text-[#FF6B0A] focus:text-[#FF6B0A] focus:outline-none transition-colors duration-200">Contact Us</a></li>
-                <li><a href="#" className="text-[#C4C4C2] hover:text-[#FF6B0A] focus:text-[#FF6B0A] focus:outline-none transition-colors duration-200">Privacy Policy</a></li>
-                <li><a href="#" className="text-[#C4C4C2] hover:text-[#FF6B0A] focus:text-[#FF6B0A] focus:outline-none transition-colors duration-200">Terms of Service</a></li>
-              </ul>
             </div>
           </div>
 
