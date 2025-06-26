@@ -54,10 +54,10 @@ function App() {
       <section className="py-16 md:py-24 px-4 bg-[#161616] tracking-[0.08em]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#EEEDEC] mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#F36103] mb-6">
               Your store needs an upgrade...
             </h2>
-            <p className="text-2xl text-[#B5B5B4] mb-40">
+            <p className="text-2xl text-[#B5B5B4] mb-[200px]">
               ...However, you're already running a business.
               <br />And that takes all your time!
             </p>
@@ -241,65 +241,6 @@ function App() {
         </div>
       </section>
 
-      {/* Agitation Section */}
-      <section className="py-16 md:py-24 px-4 bg-[#161616]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#EEEDEC] mb-8 text-center">
-            Agitation: You're Already Overwhelmed.
-          </h2>
-          
-          <p className="text-base text-[#B5B5B4] mb-8 text-center max-w-3xl mx-auto">
-            You're running promotions, managing orders, and answering customer questions—while your website struggles to keep up. Every minute lost on a clunky store is revenue left on the table.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Card 1: Outdated Design */}
-            <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
-              <X size={20} className="absolute top-4 left-4 text-red-500" />
-              <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
-                Outdated Design
-              </h3>
-              <p className="text-sm text-[#B5B5B4]">
-                Tired layouts and old templates repel first-time visitors before they click "Add to Cart."
-              </p>
-            </div>
-            
-            {/* Card 2: Confusing Navigation */}
-            <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
-              <X size={20} className="absolute top-4 left-4 text-red-500" />
-              <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
-                Confusing Navigation
-              </h3>
-              <p className="text-sm text-[#B5B5B4]">
-                Buried menus and jargon-filled pages lead to abandoned carts and frustrated customers.
-              </p>
-            </div>
-            
-            {/* Card 3: Missed Sales Opportunities */}
-            <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
-              <X size={20} className="absolute top-4 left-4 text-red-500" />
-              <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
-                Missed Sales Opportunities
-              </h3>
-              <p className="text-sm text-[#B5B5B4]">
-                Delayed updates and slow page loads mean you can't capitalize on peak buying moments.
-              </p>
-            </div>
-            
-            {/* Card 4: Hidden Costs & Delays */}
-            <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
-              <X size={20} className="absolute top-4 left-4 text-red-500" />
-              <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
-                Hidden Costs & Delays
-              </h3>
-              <p className="text-sm text-[#B5B5B4]">
-                Freelancers and DIY templates drain your budget and schedule, with no conversion guarantees.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA Section */}
       <section className="pt-16 md:pt-24 px-4 text-center">
         <div className="max-w-4xl mx-auto">
@@ -348,10 +289,52 @@ function App() {
               </p>
             </div>
 
-            {/* Pages */}
+            {/* Company Links */}
+            <div>
+              <h4 className="text-lg font-semibold text-[#EEEDEC] mb-4">Company</h4>
+              <ul className="space-y-3">
+                <li><a href="#" className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">About Us</a></li>
+                <li><a href="#" className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">How It Works</a></li>
+                <li><a href="#" className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">Pricing</a></li>
+                <li><a href="#" className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">Case Studies</a></li>
+              </ul>
+            </div>
+
+            {/* Support Links */}
+            <div>
+              <h4 className="text-lg font-semibold text-[#EEEDEC] mb-4">Support</h4>
+              <ul className="space-y-3">
+                <li><a href="#" className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">Help Center</a></li>
+                <li><a href="#" className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">Contact Us</a></li>
+                <li><a href="#" className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">Privacy Policy</a></li>
+                <li><a href="#" className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom section with logo and badge */}
+          <div className="border-t border-[#595B5B] pt-8 flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <p className="text-[#B5B5B4] text-sm">
+                © 2025 Beautifully Done. All rights reserved.
+              </p>
+            </div>
+            
+            {/* Bolt Badge */}
+            <div className="flex items-center space-x-2">
+              <span className="text-[#595B5B] text-xs">Powered by</span>
+              <img 
+                src="/src/badge/logotext_poweredby_360w.png" 
+                alt="Powered by Bolt" 
+                className="h-4 opacity-60"
+              />
+            </div>
           </div>
         </div>
       </footer>
+
+      {/* Store Transformation Form Modal */}
+      <StoreTransformationForm isOpen={isFormOpen} onClose={handleCloseForm} />
     </div>
   );
 }
