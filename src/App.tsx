@@ -325,13 +325,12 @@ function App() {
               </p>
             </div>
             
-            {/* Bolt Badge */}
-            <div className="flex items-center space-x-2">
-              <span className="text-[#8A8A8A] text-xs">Powered by</span>
+            {/* Bolt Badge - Larger Size */}
+            <div className="flex items-center">
               <img 
                 src="/src/badge/logotext_poweredby_360w.png" 
-                alt="Powered by Bolt" 
-                className="h-4 opacity-60"
+                alt="Bolt" 
+                className="h-8 opacity-80 hover:opacity-100 transition-opacity duration-200"
               />
             </div>
           </div>
