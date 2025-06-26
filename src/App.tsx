@@ -194,26 +194,102 @@ function App() {
             <span>See My New Store</span>
             <ArrowRight size={20} className="hidden md:block ml-3" />
           </button>
-          
-          {/* Bolt.new Badge */}
-          <div className="relative">
-            {/* Extended white line - 70% wider */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-[170%] h-px bg-[#595B5B]"></div>
-            <a 
-              href="https://bolt.new/?rid=236em2" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block hover:opacity-80 transition-opacity duration-200 pt-[10px] pb-[10px]"
-            >
-              <img 
-                src="https://i.imgur.com/IW2FOnu.png" 
-                alt="Built with Bolt" 
-                className="h-12"
-              />
-            </a>
-          </div>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer className="py-16 md:py-24 px-4 bg-[#161616] border-t border-[#595B5B]">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-12 mb-12">
+            {/* Newsletter Signup */}
+            <div className="md:col-span-1">
+              <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4">
+                Join our newsletter
+              </h3>
+              <p className="text-[#B5B5B4] mb-2">
+                Get updates on store transformations, conversion tips, and exclusive offers.
+              </p>
+              <p className="text-[#B5B5B4] text-sm mb-6">
+                Don't worry, we hate spam too.
+              </p>
+              
+              <div className="space-y-4">
+                <input
+                  type="email"
+                  placeholder="Your Email Address"
+                  className="w-full px-4 py-3 bg-[#161616] border border-[#595B5B] rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200"
+                />
+                <button className="w-full bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-3 font-medium rounded-lg transition-colors duration-200">
+                  Get Notified
+                </button>
+              </div>
+              
+              <p className="text-[#595B5B] text-xs mt-4 leading-relaxed">
+                We need your contact information to send you updates about our services. You may unsubscribe from these communications at any time.
+              </p>
+            </div>
+
+            {/* Pages */}
+            <div className="md:col-span-1">
+              <h3 className="text-xl font-bold text-[#EEEDEC] mb-6">
+                Pages
+              </h3>
+              <nav className="space-y-3">
+                <a href="#" className="block text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">
+                  Home
+                </a>
+                <a href="#" className="block text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">
+                  Examples
+                </a>
+                <a href="#" className="block text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">
+                  Contact
+                </a>
+                <a href="#" className="block text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">
+                  Newsletter
+                </a>
+              </nav>
+            </div>
+
+            {/* Contact */}
+            <div className="md:col-span-1">
+              <h3 className="text-xl font-bold text-[#EEEDEC] mb-6">
+                Contact
+              </h3>
+              <a 
+                href="mailto:hello@beautifullydone.com" 
+                className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200"
+              >
+                hello@beautifullydone.com
+              </a>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <div className="pt-8 border-t border-[#595B5B] text-center text-[#595B5B] text-sm">
+            © 2025 Beautifully Done. All rights reserved.
+          </div>
+        </div>
+      </footer>
+
+      {/* Bolt.new Badge */}
+      <div className="bg-[#161616] py-8">
+        <div className="relative max-w-4xl mx-auto text-center">
+          {/* Extended white line - 70% wider */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-[170%] h-px bg-[#595B5B]"></div>
+          <a 
+            href="https://bolt.new/?rid=236em2" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block hover:opacity-80 transition-opacity duration-200 pt-[10px] pb-[10px]"
+          >
+            <img 
+              src="https://i.imgur.com/IW2FOnu.png" 
+              alt="Built with Bolt" 
+              className="h-12"
+            />
+          </a>
+        </div>
+      </div>
 
       {/* Store Transformation Form Modal */}
       <StoreTransformationForm 
