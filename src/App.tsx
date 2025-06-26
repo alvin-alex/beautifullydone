@@ -261,13 +261,13 @@ function App() {
       </footer>
 
       {/* Bolt.new Badge */}
-      <div className="bg-[#161616] py-8">
+      <div className="bg-[#161616] py-4">
         <div className="relative max-w-4xl mx-auto text-center">
-          {/* Extended white line - 70% wider */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-[170%] h-px bg-[#595B5B]"></div>
+          {/* Line above copyright - matches footer line width */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-full h-px bg-[#595B5B]"></div>
           
           {/* Copyright */}
-          <div className="text-center text-[#595B5B] text-sm pt-8 pb-4">
+          <div className="text-center text-[#595B5B] text-sm pt-4 pb-2">
             © 2025 Beautifully Done. All rights reserved.
           </div>
           
@@ -275,7 +275,7 @@ function App() {
             href="https://bolt.new/?rid=236em2" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-block hover:opacity-80 transition-opacity duration-200 pt-[10px] pb-[10px]"
+            className="inline-block hover:opacity-80 transition-opacity duration-200 pt-2 pb-4"
           >
             <img 
               src="https://i.imgur.com/IW2FOnu.png" 
