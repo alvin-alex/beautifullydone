@@ -1,16 +1,36 @@
-@import './clash-display.css';
+@import './clash-display-optimized.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Base styles */
+/* Base styles with optimized font loading */
 html {
   @apply bg-[#161616] overflow-x-hidden scroll-smooth;
+  /* Improved font loading strategy */
+  font-family: 'ClashDisplay-Variable', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Enable font optimization features */
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   @apply bg-[#161616] overflow-x-hidden antialiased;
-  font-family: 'ClashDisplay-Variable', 'Inter', system-ui, sans-serif;
+  font-family: inherit;
+}
+
+/* Font loading optimization classes */
+.font-display-optional {
+  font-display: optional;
+}
+
+.font-display-swap {
+  font-display: swap;
+}
+
+.font-display-fallback {
+  font-display: fallback;
 }
 
 /* Prevent any content from causing horizontal scrolling */
@@ -29,10 +49,10 @@ body {
 
 /* Selection styles */
 ::selection {
-  @apply bg-[#F36103] text-[#161616];
+  @apply bg-[#FF6B0A] text-[#FFFFFF];
 }
 
-/* Scrollbar styles */
+/* Optimized scrollbar styles */
 ::-webkit-scrollbar {
   @apply w-2;
 }
@@ -42,9 +62,27 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-[#595B5B] rounded-full;
+  @apply bg-[#6B6B6B] rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-[#F36103];
+  @apply bg-[#FF6B0A];
+}
+
+/* Loading state for fonts */
+.fonts-loading {
+  visibility: hidden;
+}
+
+.fonts-loaded {
+  visibility: visible;
+}
+
+/* Critical path optimization */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

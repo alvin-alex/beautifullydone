@@ -7,10 +7,41 @@
     <title>Beautifully Done</title>
     <meta name="description" content="Get a store you're proud of—live in 24 hours. No tech headaches. No agency fees. Just your new store ready to sell." />
     
-    <!-- Clash Display Font -->
+    <!-- Preload critical fonts for faster rendering -->
+    <link rel="preload" href="/src/fonts/ClashDisplay-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/src/fonts/ClashDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Preconnect to Google Fonts for faster Inter fallback loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load Inter with font-display: swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Load critical CSS first -->
+    <style>
+      /* Inline critical font-face declarations to prevent FOUT */
+      @font-face {
+        font-family: 'ClashDisplay-Variable';
+        src: url('/src/fonts/ClashDisplay-Variable.woff2') format('woff2');
+        font-weight: 200 700;
+        font-display: swap;
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'ClashDisplay-Medium';
+        src: url('/src/fonts/ClashDisplay-Medium.woff2') format('woff2');
+        font-weight: 500;
+        font-display: swap;
+        font-style: normal;
+      }
+      
+      /* Prevent layout shift with font fallback */
+      html {
+        font-family: 'ClashDisplay-Variable', 'Inter', system-ui, sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

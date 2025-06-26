@@ -1,0 +1,66 @@
+/**
+* @license
+*
+* Font Family: Clash Display (Optimized)
+* Designed by: Indian Type Foundry
+* URL: https://www.fontshare.com/fonts/clash-display
+* © 2025 Indian Type Foundry
+*
+* Optimized version - only loads essential weights with fallback strategy
+*/
+
+/* Primary variable font - covers most use cases */
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('./fonts/ClashDisplay-Variable.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Variable.woff') format('woff');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+  /* Add font-feature-settings for better rendering */
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+/* Load only essential individual weights for better browser support */
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('./fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('./fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('./fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+/* Only load Bold if specifically needed */
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('./fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('./fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+/* Removed unnecessary weights: Extralight, Light to reduce bundle size */
