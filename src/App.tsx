@@ -239,12 +239,6 @@ function App() {
                   Home
                 </a>
                 <a href="#" className="block text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">
-                  Examples
-                </a>
-                <a href="#" className="block text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">
-                  Contact
-                </a>
-                <a href="#" className="block text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">
                   Newsletter
                 </a>
               </nav>
@@ -263,11 +257,6 @@ function App() {
               </a>
             </div>
           </div>
-
-          {/* Copyright */}
-          <div className="pt-8 border-t border-[#595B5B] text-center text-[#595B5B] text-sm">
-            © 2025 Beautifully Done. All rights reserved.
-          </div>
         </div>
       </footer>
 
@@ -276,6 +265,12 @@ function App() {
         <div className="relative max-w-4xl mx-auto text-center">
           {/* Extended white line - 70% wider */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-[170%] h-px bg-[#595B5B]"></div>
+          
+          {/* Copyright */}
+          <div className="text-center text-[#595B5B] text-sm pt-8 pb-4">
+            © 2025 Beautifully Done. All rights reserved.
+          </div>
+          
           <a 
             href="https://bolt.new/?rid=236em2" 
             target="_blank" 
