@@ -61,6 +61,64 @@ function App() {
               ...However, you're already running a business.
               <br />And that takes all your time!
             </p>
+
+            {/* Agitation Section */}
+            <div className="mt-16 mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#EEEDEC] mb-8 text-center">
+                Agitation: You're Already Overwhelmed.
+              </h2>
+              
+              <p className="text-base text-[#B5B5B4] mb-8 text-center max-w-3xl mx-auto">
+                You're running promotions, managing orders, and answering customer questions—while your website struggles to keep up. Every minute lost on a clunky store is revenue left on the table.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Card 1: Outdated Design */}
+                <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
+                  <X size={20} className="absolute top-4 left-4 text-red-500" />
+                  <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                    Outdated Design
+                  </h3>
+                  <p className="text-sm text-[#B5B5B4]">
+                    Tired layouts and old templates repel first-time visitors before they click "Add to Cart."
+                  </p>
+                </div>
+                
+                {/* Card 2: Confusing Navigation */}
+                <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
+                  <X size={20} className="absolute top-4 left-4 text-red-500" />
+                  <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                    Confusing Navigation
+                  </h3>
+                  <p className="text-sm text-[#B5B5B4]">
+                    Buried menus and jargon-filled pages lead to abandoned carts and frustrated customers.
+                  </p>
+                </div>
+                
+                {/* Card 3: Missed Sales Opportunities */}
+                <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
+                  <X size={20} className="absolute top-4 left-4 text-red-500" />
+                  <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                    Missed Sales Opportunities
+                  </h3>
+                  <p className="text-sm text-[#B5B5B4]">
+                    Delayed updates and slow page loads mean you can't capitalize on peak buying moments.
+                  </p>
+                </div>
+                
+                {/* Card 4: Hidden Costs & Delays */}
+                <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#595B5B] hover:shadow-lg transition-shadow duration-200">
+                  <X size={20} className="absolute top-4 left-4 text-red-500" />
+                  <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                    Hidden Costs & Delays
+                  </h3>
+                  <p className="text-sm text-[#B5B5B4]">
+                    Freelancers and DIY templates drain your budget and schedule, with no conversion guarantees.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <h3 className="text-3xl md:text-4xl font-semibold text-[#EEEDEC] mb-12">
               So How Do You Get a Store That Actually Converts?
             </h3>
@@ -292,65 +350,6 @@ function App() {
 
             {/* Pages */}
             <div className="md:col-span-1">
-              <h3 className="text-xl font-bold text-[#EEEDEC] mb-6">
-                Pages
-              </h3>
-              <nav className="space-y-3">
-                <a href="#" className="block text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">
-                  Home
-                </a>
-                <a href="#" className="block text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200">
-                  Newsletter
-                </a>
-              </nav>
-            </div>
-
-            {/* Contact */}
-            <div className="md:col-span-1">
-              <h3 className="text-xl font-bold text-[#EEEDEC] mb-6">
-                Contact
-              </h3>
-              <a 
-                href="mailto:hello@beautifullydone.com" 
-                className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200"
-              >
-                hello@beautifullydone.com
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      {/* Bolt.new Badge */}
-      <div className="bg-[#161616] py-4">
-        <div className="relative max-w-6xl mx-auto text-center">
-          {/* Line above copyright - matches footer line width */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-full h-px bg-[#595B5B]"></div>
-          
-          {/* Copyright */}
-          <div className="text-center text-[#595B5B] text-sm pt-4 pb-2">
-            © 2025 Beautifully Done. All rights reserved.
-          </div>
-          
-          <a 
-            href="https://bolt.new/?rid=236em2" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block hover:opacity-80 transition-opacity duration-200 pt-2 pb-4"
-          >
-            <img 
-              src="https://i.imgur.com/IW2FOnu.png" 
-              alt="Built with Bolt" 
-              className="h-12"
-            />
-          </a>
-        </div>
-      </div>
-
-      {/* Store Transformation Form Modal */}
-      <StoreTransformationForm 
-        isOpen={isFormOpen} 
-        onClose={handleCloseForm} 
       />
     </div>
   );
