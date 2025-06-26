@@ -198,7 +198,7 @@ function App() {
       </section>
 
       {/* Footer Section */}
-      <footer className="py-16 md:py-24 px-4 bg-[#161616] border-t border-[#595B5B]">
+      <footer className="pt-16 md:pt-24 pb-8 md:pb-12 px-4 bg-[#161616] border-t border-[#595B5B]">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             {/* Newsletter Signup */}
