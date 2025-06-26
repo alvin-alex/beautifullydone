@@ -526,6 +526,57 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
     else if (currentScreen === 'new-store-details') setCurrentScreen('new-store-upload');
   };
 
+  const getProgressInfo = () => {
+    // Define the step mapping for each flow
+    const existingStoreFlow = ['welcome', 'contact', 'shopify-check', 'existing-store-url', 'existing-store-loading', 'existing-store-result'];
+    const newStoreFlow = ['welcome', 'contact', 'shopify-check', 'new-store-upload', 'new-store-details', 'new-store-loading', 'new-store-result'];
+    
+    // Determine which flow we're in
+    const isExistingStoreFlow = formData.hasShopifyStore === true || 
+      ['existing-store-url', 'existing-store-loading', 'existing-store-result'].includes(currentScreen);
+    
+    const isNewStoreFlow = formData.hasShopifyStore === false || 
+      ['new-store-upload', 'new-store-details', 'new-store-loading', 'new-store-result'].includes(currentScreen);
+    
+    let currentStep = 0;
+    let totalSteps = 6; // Default
+    
+    if (isExistingStoreFlow) {
+      currentStep = existingStoreFlow.indexOf(currentScreen);
+      totalSteps = existingStoreFlow.length;
+    } else if (isNewStoreFlow) {
+      currentStep = newStoreFlow.indexOf(currentScreen);
+      totalSteps = newStoreFlow.length;
+    } else {
+      // For early screens before branching
+      const earlyScreens = ['welcome', 'contact', 'shopify-check'];
+      currentStep = earlyScreens.indexOf(currentScreen);
+      totalSteps = 6; // Assume average flow length
+    }
+    
+    return { currentStep, totalSteps };
+  };
+
+  const ProgressIndicator = () => {
+    const { currentStep, totalSteps } = getProgressInfo();
+    
+    return (
+      <div className="flex justify-center space-x-2 py-4 flex-shrink-0">
+        {Array.from({ length: totalSteps }, (_, index) => (
+          <div
+            key={index}
+            className={`transition-all duration-300 rounded-full ${
+              index === currentStep
+                ? 'w-2 h-6 bg-[#F36103]' // Active: stretched vertically and orange
+                : index < currentStep
+                ? 'w-2 h-2 bg-[#F36103] opacity-60' // Completed: orange but smaller
+                : 'w-2 h-2 bg-[#595B5B]' // Inactive: grey
+            }`}
+          />
+        ))}
+      </div>
+    );
+  };
   return (
     <div 
       className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
@@ -560,6 +611,9 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
         <div className="flex-1 overflow-y-auto transition-all duration-300">
           {renderScreen()}
         </div>
+
+        {/* Progress Indicator */}
+        <ProgressIndicator />
       </div>
     </div>
   );
