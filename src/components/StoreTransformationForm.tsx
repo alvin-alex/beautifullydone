@@ -264,6 +264,46 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               {errors.storeUrl && <p className="text-red-500 text-sm mt-2">{errors.storeUrl}</p>}
             </div>
             
+            {/* Instructions Section */}
+            <div className="bg-[#1D1C1C] rounded-lg p-6 border border-[#595B5B] mb-8">
+              <h3 className="text-lg font-semibold text-[#F36103] mb-4">
+                📍 How to find your store URL
+              </h3>
+              <div className="space-y-3 text-[#B5B5B4]">
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-[#F36103] rounded-full flex items-center justify-center text-[#161616] font-bold text-sm flex-shrink-0 mt-0.5">
+                    1
+                  </div>
+                  <p>Log into your Shopify admin panel</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-[#F36103] rounded-full flex items-center justify-center text-[#161616] font-bold text-sm flex-shrink-0 mt-0.5">
+                    2
+                  </div>
+                  <p>Click on "General" in the left sidebar under Settings</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-[#F36103] rounded-full flex items-center justify-center text-[#161616] font-bold text-sm flex-shrink-0 mt-0.5">
+                    3
+                  </div>
+                  <p>Look for "Store details" section - your URL will be shown there</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-[#F36103] rounded-full flex items-center justify-center text-[#161616] font-bold text-sm flex-shrink-0 mt-0.5">
+                    4
+                  </div>
+                  <p>Copy and paste the full URL (it usually ends with .myshopify.com)</p>
+                </div>
+              </div>
+              
+              <div className="mt-4 p-3 bg-[#161616] rounded border border-[#595B5B]">
+                <p className="text-[#B5B5B4] text-sm">
+                  <span className="text-[#F36103] font-medium">💡 Tip:</span> Your store URL typically looks like: 
+                  <span className="text-[#EEEDEC] font-mono ml-1">yourstore.myshopify.com</span>
+                </p>
+              </div>
+            </div>
+            
             <button
               onClick={handleNext}
               className="w-full bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-3"
