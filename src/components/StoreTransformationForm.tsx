@@ -532,11 +532,11 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
       onClick={handleBackdropClick}
     >
       <div 
-        className="bg-[#161616] rounded-lg p-12 max-w-4xl w-full border border-[#595B5B] relative max-h-[90vh] overflow-y-auto"
+        className="bg-[#161616] rounded-lg p-8 md:p-12 max-w-5xl w-full h-[85vh] border border-[#595B5B] relative overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header with Close and Back buttons */}
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-6 flex-shrink-0">
           {showBackButton && (
             <button
               onClick={handleBack}
@@ -557,7 +557,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
         </div>
 
         {/* Screen Content */}
-        <div className="transition-all duration-300">
+        <div className="flex-1 overflow-y-auto transition-all duration-300">
           {renderScreen()}
         </div>
       </div>
