@@ -219,7 +219,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             <h2 className="text-3xl font-bold text-[#EEEDEC] mb-12 text-center">
               Do you already have a Shopify store?
             </h2>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <button
                 onClick={() => {
                   setFormData(prev => ({ ...prev, hasShopifyStore: true }));
@@ -347,11 +347,11 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               <BeforeAfterSlider
                 beforeImage="https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=800"
                 afterImage="https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=800"
-                className="w-full h-96 rounded-lg"
+                className="w-full h-64 md:h-96 rounded-lg"
               />
             </div>
             
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <button className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200">
                 Import to Shopify
               </button>
@@ -541,7 +541,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               </div>
             </div>
             
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <button className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200">
                 Claim This Store
               </button>
@@ -623,7 +623,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
       onClick={handleBackdropClick}
     >
       <div 
-        className="bg-[#161616] rounded-lg p-8 md:p-12 max-w-5xl w-full h-[85vh] border border-[#595B5B] relative overflow-hidden flex flex-col"
+        className="bg-[#161616] rounded-lg p-6 md:p-12 max-w-5xl w-full h-[85vh] border border-[#595B5B] relative overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header with Close and Back buttons */}

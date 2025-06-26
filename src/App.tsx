@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#161616] text-[#EEEDEC] tracking-wider">
       {/* Hero Section */}
-      <section className="h-screen relative flex items-center justify-center">
+      <section className="min-h-[80vh] md:h-screen relative flex items-center justify-center">
         {/* Subtle orange gradient background */}
         <div className="absolute inset-0 bg-gradient-radial from-[#F36103]/5 via-transparent to-transparent"></div>
         
@@ -57,7 +57,7 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold text-[#FF6B0A] mb-6">
               Your store needs an upgrade...
             </h2>
-            <p className="text-2xl text-[#C4C4C2] mb-16">
+            <p className="text-2xl text-[#C4C4C2] mb-8 md:mb-16">
               ...However, you're already running a business.
               <br />And that takes all your time!
             </p>
@@ -129,7 +129,7 @@ function App() {
             </h3>
           </div>
 
-          <div className="space-y-8 mb-48">
+          <div className="space-y-8 mb-24 md:mb-48">
             {/* Option 1 */}
             <div className="border-l-4 border-[#6B6B6B] pl-6 flex items-start space-x-4">
               <div className="w-12 h-12 bg-[#FF6B0A] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
