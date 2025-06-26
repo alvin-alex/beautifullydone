@@ -63,7 +63,7 @@ function App() {
             </p>
 
             {/* Vertical fade line */}
-            <div className="flex justify-center mb-[300px]">
+            <div className="flex justify-center mb-[200px]">
               <div className="w-px h-32 bg-gradient-to-b from-[#FF6B0A] via-[#FF6B0A]/50 to-transparent"></div>
             </div>
 
