@@ -51,7 +51,7 @@ function App() {
       </section>
 
       {/* Problem-Solution Section */}
-      <section className="py-16 md:py-24 px-4 bg-[#161616] tracking-[0.08em]">
+      <section className="py-24 px-4 bg-[#161616] tracking-[0.08em]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-[#FF6B0A] mb-6">
@@ -247,7 +247,7 @@ function App() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="pt-16 md:pt-24 px-4 text-center">
+      <section className="pt-24 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-8">
             Ready for your dream store?
@@ -263,7 +263,7 @@ function App() {
       </section>
 
       {/* Footer Section */}
-      <footer className="pt-16 md:pt-24 pb-8 md:pb-12 px-4 bg-[#161616] border-t border-[#6B6B6B]">
+      <footer className="pt-24 pb-12 px-4 bg-[#161616] border-t border-[#6B6B6B]">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-md mx-auto mb-12">
             {/* Newsletter Signup */}
