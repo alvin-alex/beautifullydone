@@ -303,11 +303,11 @@ function App() {
               </p>
             </div>
             
-            {/* Bolt Badge - Larger Size */}
+            {/* Bolt Badge - Updated with Imgur link */}
             <div className="flex items-center">
               <img 
-                src="/src/badge/logotext_poweredby_360w.png" 
-                alt="Bolt" 
+                src="https://i.imgur.com/IW2FOnu.png" 
+                alt="Powered by Bolt" 
                 className="h-8 opacity-80 hover:opacity-100 transition-opacity duration-200"
               />
             </div>
