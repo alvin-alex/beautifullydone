@@ -45,10 +45,10 @@ export const TestimonialCarousel: React.FC = () => {
     <div className="relative max-w-4xl mx-auto">
       <div className="bg-[#1D1C1C] rounded-lg p-8 md:p-12 border border-[#595B5B]">
         <div className="text-center">
-          <blockquote className="text-xl md:text-2xl text-[#EEEDEC] mb-6 leading-relaxed">
+          <blockquote className="text-base md:text-2xl text-[#EEEDEC] mb-6 leading-relaxed">
             "{testimonials[currentIndex].quote}"
           </blockquote>
-          <div className="text-[#A1A1A0]">
+          <div className="text-[#A1A1A0] text-sm">
             — {testimonials[currentIndex].author}, {testimonials[currentIndex].business}
           </div>
         </div>

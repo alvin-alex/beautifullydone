@@ -24,7 +24,7 @@ function App() {
           <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
             Get a Store You're <span className="text-[#FF6B0A]">Proud Of</span><span className="font-light">—Live in</span> 24 Hours
           </h1>
-          <h2 className="text-xl md:text-2xl text-[#C4C4C2] mb-8 max-w-3xl mx-auto">
+          <h2 className="text-base md:text-2xl text-[#C4C4C2] mb-8 max-w-3xl mx-auto">
             {/* Mobile version */}
             <span className="md:hidden">
               No tech headaches. 
@@ -42,7 +42,7 @@ function App() {
           </h2>
           <button 
             onClick={handleCTAClick}
-            className="bg-[#FF6B0A] hover:bg-[#E55A00] focus:bg-[#E55A00] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 text-[#FFFFFF] px-6 md:px-12 py-4 text-lg font-medium rounded-lg transition-all duration-200 inline-flex items-center md:space-x-3"
+            className="bg-[#FF6B0A] hover:bg-[#E55A00] focus:bg-[#E55A00] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 text-[#FFFFFF] px-6 md:px-12 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center md:space-x-3"
           >
             <span>See My New Store</span>
             <ArrowRight size={20} className="hidden md:block ml-3" />
@@ -57,7 +57,7 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold text-[#FF6B0A] mb-6">
               Your store needs an upgrade...
             </h2>
-            <p className="text-2xl text-[#C4C4C2] mb-8 md:mb-16">
+            <p className="text-base md:text-2xl text-[#C4C4C2] mb-8 md:mb-16">
               ...However, you're already running a business.
               <br />And that takes all your time!
             </p>
@@ -69,7 +69,7 @@ function App() {
 
             {/* Agitation Section */}
             <div className="mt-16 mb-[200px]">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#EEEDEC] mb-8 text-center">
+              <h2 className="text-xl md:text-3xl font-bold text-[#EEEDEC] mb-8 text-center">
                 You're Already Overwhelmed.
               </h2>
               
@@ -136,10 +136,10 @@ function App() {
                 <Code size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
                   BUILD IT YOURSELF?
                 </h4>
-                <p className="text-[#C4C4C2] text-xl">
+                <p className="text-[#C4C4C2] text-base">
                   If you have months to spare, it's not a problem. However, if you're actually running a business... this isn't realistic.
                 </p>
               </div>
@@ -151,10 +151,10 @@ function App() {
                 <Users size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
                   HIRE A DEVELOPER?
                 </h4>
-                <p className="text-[#C4C4C2] text-xl">
+                <p className="text-[#C4C4C2] text-base">
                   Finding good developers is expensive, vetting them is time-consuming. Even if you find the perfect person... You're still waiting 3-6 months and hoping they understand e-commerce.
                 </p>
               </div>
@@ -166,10 +166,10 @@ function App() {
                 <Palette size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
                   USE A TEMPLATE?
                 </h4>
-                <p className="text-[#C4C4C2] text-xl">
+                <p className="text-[#C4C4C2] text-base">
                   Don't have $20K+ for custom design? Well then you get the same template as 10,000 other stores. Not exactly built to convert your specific audience.
                 </p>
               </div>
@@ -189,10 +189,10 @@ function App() {
                 <Clock size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
                   SPEED
                 </h4>
-                <p className="text-[#C4C4C2] text-lg">
+                <p className="text-[#C4C4C2] text-base">
                   We don't build from scratch. Our AI has analyzed 1,000+ converting stores and rebuilds yours in under 24 hours. Less waiting, more selling.
                 </p>
               </div>
@@ -204,10 +204,10 @@ function App() {
                 <Target size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
                   PROVEN
                 </h4>
-                <p className="text-[#C4C4C2] text-lg">
+                <p className="text-[#C4C4C2] text-base">
                   Our first priority is results. Every design element is based on real conversion data from stores that actually sell. Less guessing, more converting.
                 </p>
               </div>
@@ -219,10 +219,10 @@ function App() {
                 <CheckCircle size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
                   EFFORTLESS
                 </h4>
-                <p className="text-[#C4C4C2] text-lg">
+                <p className="text-[#C4C4C2] text-base">
                   You're not managing a project or dealing with revisions. Send us your current store URL, and get a new one back. That's it.
                 </p>
               </div>
@@ -234,10 +234,10 @@ function App() {
                 <Shield size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
                   GUARANTEED
                 </h4>
-                <p className="text-[#C4C4C2] text-lg">
+                <p className="text-[#C4C4C2] text-base">
                   We only win if you win. That's the basis for a good partnership. You won't carry all the risk, we'll share it with our results guarantee.
                 </p>
               </div>
@@ -254,7 +254,7 @@ function App() {
           </h2>
           <button 
             onClick={handleCTAClick}
-            className="bg-[#FF6B0A] hover:bg-[#E55A00] focus:bg-[#E55A00] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 text-[#FFFFFF] px-6 md:px-12 py-4 text-lg font-medium rounded-lg transition-all duration-200 inline-flex items-center md:space-x-3 mb-8"
+            className="bg-[#FF6B0A] hover:bg-[#E55A00] focus:bg-[#E55A00] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 text-[#FFFFFF] px-6 md:px-12 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center md:space-x-3 mb-8"
           >
             <span>See My New Store</span>
             <ArrowRight size={20} className="hidden md:block ml-3" />
@@ -268,10 +268,10 @@ function App() {
           <div className="max-w-md mx-auto mb-12">
             {/* Newsletter Signup */}
             <div>
-              <h3 className="text-2xl font-bold text-[#EEEDEC] mb-4 text-center">
+              <h3 className="text-xl font-bold text-[#EEEDEC] mb-4 text-center">
                 Join our newsletter
               </h3>
-              <p className="text-[#C4C4C2] mb-2 text-center">
+              <p className="text-[#C4C4C2] mb-2 text-center text-sm">
                 Get updates on store transformations, conversion tips, and exclusive offers.
               </p>
               <p className="text-[#C4C4C2] text-sm mb-6 text-center">
@@ -282,9 +282,9 @@ function App() {
                 <input
                   type="email"
                   placeholder="Your Email Address"
-                  className="w-full px-4 py-3 bg-[#161616] border border-[#6B6B6B] focus:border-[#FF6B0A] focus:outline-none focus:ring-2 focus:ring-[#FF6B0A]/30 rounded-lg text-[#EEEDEC] placeholder-[#8A8A8A] transition-all duration-200"
+                  className="w-full px-4 py-3 bg-[#161616] border border-[#6B6B6B] focus:border-[#FF6B0A] focus:outline-none focus:ring-2 focus:ring-[#FF6B0A]/30 rounded-lg text-[#EEEDEC] placeholder-[#8A8A8A] transition-all duration-200 text-base"
                 />
-                <button className="w-full bg-[#FF6B0A] hover:bg-[#E55A00] focus:bg-[#E55A00] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 text-[#FFFFFF] px-6 py-3 font-medium rounded-lg transition-all duration-200">
+                <button className="w-full bg-[#FF6B0A] hover:bg-[#E55A00] focus:bg-[#E55A00] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 text-[#FFFFFF] px-6 py-3 font-medium rounded-lg transition-all duration-200 text-base">
                   Get Notified
                 </button>
               </div>

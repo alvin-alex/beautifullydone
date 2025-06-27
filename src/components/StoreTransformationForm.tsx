@@ -156,12 +156,12 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             <h2 className="text-4xl font-bold text-[#EEEDEC] mb-4">
               Let's build your dream store.
             </h2>
-            <p className="text-xl text-[#B5B5B4] mb-12">
+            <p className="text-base text-[#B5B5B4] mb-12">
               Answer a few quick questions and get a preview in seconds.
             </p>
             <button
               onClick={handleNext}
-              className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-12 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center space-x-3"
+              className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-12 py-4 text-base font-medium rounded-lg transition-colors duration-200 inline-flex items-center space-x-3"
             >
               <span>Get Started</span>
               <ArrowRight size={20} />
@@ -182,7 +182,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
                   placeholder="Your full name"
                   value={formData.name}
                   onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-lg ${
+                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-base ${
                     errors.name ? 'border-red-500' : 'border-[#595B5B]'
                   }`}
                 />
@@ -195,7 +195,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
                   placeholder="your@email.com"
                   value={formData.email}
                   onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-lg ${
+                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-base ${
                     errors.email ? 'border-red-500' : 'border-[#595B5B]'
                   }`}
                 />
@@ -205,7 +205,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             
             <button
               onClick={handleNext}
-              className="w-full bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-3"
+              className="w-full bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-base font-medium rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-3"
             >
               <span>Next</span>
               <ArrowRight size={20} />
@@ -257,7 +257,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
                 placeholder="https://yourstore.myshopify.com"
                 value={formData.storeUrl}
                 onChange={(e) => setFormData(prev => ({ ...prev, storeUrl: e.target.value }))}
-                className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-lg ${
+                className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-base ${
                   errors.storeUrl ? 'border-red-500' : 'border-[#595B5B]'
                 }`}
               />
@@ -266,7 +266,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             
             {/* Instructions Section */}
             <div className="bg-[#1D1C1C] rounded-lg p-6 border border-[#595B5B] mb-8">
-              <h3 className="text-lg font-semibold text-[#F36103] mb-4">
+              <h3 className="text-base font-semibold text-[#F36103] mb-4">
                 📍 How to find your store URL
               </h3>
               <div className="space-y-3 text-[#B5B5B4]">
@@ -306,7 +306,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             
             <button
               onClick={handleNext}
-              className="w-full bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-3"
+              className="w-full bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-base font-medium rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-3"
             >
               <span>Analyze My Store</span>
               <ArrowRight size={20} />
@@ -322,7 +322,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             <h2 className="text-3xl font-bold text-[#EEEDEC] mb-4">
               Analyzing your store...
             </h2>
-            <p className="text-xl text-[#B5B5B4] mb-8">
+            <p className="text-base text-[#B5B5B4] mb-8">
               Transforming design & copy
             </p>
             
@@ -332,7 +332,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
                 style={{ width: `${loadingProgress}%` }}
               ></div>
             </div>
-            <p className="text-[#B5B5B4]">{loadingProgress}% complete</p>
+            <p className="text-[#B5B5B4] text-base">{loadingProgress}% complete</p>
           </div>
         );
 
@@ -352,10 +352,10 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <button className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200">
+              <button className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-base font-medium rounded-lg transition-colors duration-200">
                 Import to Shopify
               </button>
-              <button className="bg-[#161616] border border-[#595B5B] hover:border-[#F36103] text-[#EEEDEC] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200">
+              <button className="bg-[#161616] border border-[#595B5B] hover:border-[#F36103] text-[#EEEDEC] px-6 py-4 text-base font-medium rounded-lg transition-colors duration-200">
                 Make Edits
               </button>
             </div>
@@ -378,7 +378,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               onDragOver={(e) => e.preventDefault()}
             >
               <Upload size={48} className="text-[#F36103] mx-auto mb-4" />
-              <p className="text-xl text-[#EEEDEC] mb-2">
+              <p className="text-base text-[#EEEDEC] mb-2">
                 Drop your images here, or{' '}
                 <label className="text-[#F36103] cursor-pointer hover:underline">
                   browse files
@@ -396,13 +396,13 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
 
             {formData.uploadedFiles.length > 0 && (
               <div className="mb-8">
-                <p className="text-[#EEEDEC] font-medium mb-4">
+                <p className="text-[#EEEDEC] font-medium mb-4 text-base">
                   {formData.uploadedFiles.length} file(s) uploaded
                 </p>
                 <div className="space-y-2">
                   {formData.uploadedFiles.map((file, index) => (
                     <div key={index} className="flex items-center justify-between bg-[#1D1C1C] px-4 py-2 rounded">
-                      <span className="text-[#B5B5B4]">{file.name}</span>
+                      <span className="text-[#B5B5B4] text-base">{file.name}</span>
                       <CheckCircle size={16} className="text-[#F36103]" />
                     </div>
                   ))}
@@ -413,7 +413,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             <button
               onClick={() => setCurrentScreen('new-store-details')}
               disabled={formData.uploadedFiles.length === 0}
-              className="w-full bg-[#F36103] hover:bg-[#994B1A] disabled:bg-[#595B5B] disabled:cursor-not-allowed text-[#161616] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-3"
+              className="w-full bg-[#F36103] hover:bg-[#994B1A] disabled:bg-[#595B5B] disabled:cursor-not-allowed text-[#161616] px-6 py-4 text-base font-medium rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-3"
             >
               <span>Continue</span>
               <ArrowRight size={20} />
@@ -430,13 +430,13 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             
             <div className="space-y-6 mb-8">
               <div>
-                <label className="block text-[#EEEDEC] font-medium mb-2">Business Name</label>
+                <label className="block text-[#EEEDEC] font-medium mb-2 text-base">Business Name</label>
                 <input
                   type="text"
                   placeholder="e.g., Artisan Coffee Co."
                   value={formData.businessName}
                   onChange={(e) => setFormData(prev => ({ ...prev, businessName: e.target.value }))}
-                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-lg ${
+                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-base ${
                     errors.businessName ? 'border-red-500' : 'border-[#595B5B]'
                   }`}
                 />
@@ -444,13 +444,13 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               </div>
               
               <div>
-                <label className="block text-[#EEEDEC] font-medium mb-2">Product Categories</label>
+                <label className="block text-[#EEEDEC] font-medium mb-2 text-base">Product Categories</label>
                 <input
                   type="text"
                   placeholder="e.g., Coffee, Tea, Accessories"
                   value={formData.productCategories}
                   onChange={(e) => setFormData(prev => ({ ...prev, productCategories: e.target.value }))}
-                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-lg ${
+                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-base ${
                     errors.productCategories ? 'border-red-500' : 'border-[#595B5B]'
                   }`}
                 />
@@ -458,13 +458,13 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               </div>
               
               <div>
-                <label className="block text-[#EEEDEC] font-medium mb-2">Short Brand Description</label>
+                <label className="block text-[#EEEDEC] font-medium mb-2 text-base">Short Brand Description</label>
                 <textarea
                   placeholder="e.g., Premium organic coffee roasted fresh daily"
                   value={formData.brandDescription}
                   onChange={(e) => setFormData(prev => ({ ...prev, brandDescription: e.target.value }))}
                   rows={4}
-                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-lg resize-none ${
+                  className={`w-full px-6 py-4 bg-[#161616] border rounded-lg text-[#EEEDEC] placeholder-[#B5B5B4] focus:outline-none focus:ring-2 focus:ring-[#F36103] transition-colors duration-200 text-base resize-none ${
                     errors.brandDescription ? 'border-red-500' : 'border-[#595B5B]'
                   }`}
                 />
@@ -474,7 +474,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             
             <button
               onClick={handleNext}
-              className="w-full bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-3"
+              className="w-full bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-base font-medium rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-3"
             >
               <span>Build My Store</span>
               <ArrowRight size={20} />
@@ -490,7 +490,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             <h2 className="text-3xl font-bold text-[#EEEDEC] mb-4">
               Building your store...
             </h2>
-            <p className="text-xl text-[#B5B5B4] mb-8">
+            <p className="text-base text-[#B5B5B4] mb-8">
               Crafting design, copy & images
             </p>
             
@@ -500,7 +500,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
                 style={{ width: `${loadingProgress}%` }}
               ></div>
             </div>
-            <p className="text-[#B5B5B4]">{loadingProgress}% complete</p>
+            <p className="text-[#B5B5B4] text-base">{loadingProgress}% complete</p>
           </div>
         );
 
@@ -516,7 +516,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
                 <div className="grid md:grid-cols-2 gap-8">
                   {/* Desktop Preview */}
                   <div>
-                    <h3 className="text-[#F36103] font-medium mb-4">Desktop Preview</h3>
+                    <h3 className="text-[#F36103] font-medium mb-4 text-base">Desktop Preview</h3>
                     <div className="bg-[#161616] rounded border border-[#595B5B] aspect-video flex items-center justify-center">
                       <img 
                         src="https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=600" 
@@ -528,7 +528,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
                   
                   {/* Mobile Preview */}
                   <div>
-                    <h3 className="text-[#F36103] font-medium mb-4">Mobile Preview</h3>
+                    <h3 className="text-[#F36103] font-medium mb-4 text-base">Mobile Preview</h3>
                     <div className="bg-[#161616] rounded border border-[#595B5B] aspect-[9/16] max-w-48 mx-auto flex items-center justify-center">
                       <img 
                         src="https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=300" 
@@ -542,10 +542,10 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <button className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200">
+              <button className="bg-[#F36103] hover:bg-[#994B1A] text-[#161616] px-6 py-4 text-base font-medium rounded-lg transition-colors duration-200">
                 Claim This Store
               </button>
-              <button className="bg-[#161616] border border-[#595B5B] hover:border-[#F36103] text-[#EEEDEC] px-6 py-4 text-lg font-medium rounded-lg transition-colors duration-200">
+              <button className="bg-[#161616] border border-[#595B5B] hover:border-[#F36103] text-[#EEEDEC] px-6 py-4 text-base font-medium rounded-lg transition-colors duration-200">
                 Request Tweaks
               </button>
             </div>
@@ -634,7 +634,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
               className="text-[#B5B5B4] hover:text-[#F36103] transition-colors duration-200 flex items-center space-x-2"
             >
               <ArrowLeft size={20} />
-              <span>Back</span>
+              <span className="text-base">Back</span>
             </button>
           )}
           {!showBackButton && <div></div>}
