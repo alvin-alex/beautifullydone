@@ -265,38 +265,8 @@ function App() {
       {/* Footer Section */}
       <footer className="pt-24 pb-12 px-4 bg-[#161616] border-t border-[#6B6B6B]">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-md mx-auto mb-12">
-            {/* Newsletter Signup */}
-            <div>
-              <h3 className="text-xl font-bold text-[#EEEDEC] mb-4 text-center">
-                Join our newsletter
-              </h3>
-              <p className="text-[#C4C4C2] mb-2 text-center text-sm">
-                Get updates on store transformations, conversion tips, and exclusive offers.
-              </p>
-              <p className="text-[#C4C4C2] text-sm mb-6 text-center">
-                Don't worry, we hate spam too.
-              </p>
-              
-              <div className="space-y-4">
-                <input
-                  type="email"
-                  placeholder="Your Email Address"
-                  className="w-full px-4 py-3 bg-[#161616] border border-[#6B6B6B] focus:border-[#FF6B0A] focus:outline-none focus:ring-2 focus:ring-[#FF6B0A]/30 rounded-lg text-[#EEEDEC] placeholder-[#8A8A8A] transition-all duration-200 text-base"
-                />
-                <button className="w-full bg-[#FF6B0A] hover:bg-[#E55A00] focus:bg-[#E55A00] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 text-[#FFFFFF] px-6 py-3 font-medium rounded-lg transition-all duration-200 text-base">
-                  Get Notified
-                </button>
-              </div>
-              
-              <p className="text-[#8A8A8A] text-xs mt-4 leading-relaxed text-center">
-                We need your contact information to send you updates about our services. You may unsubscribe from these communications at any time.
-              </p>
-            </div>
-          </div>
-
           {/* Bottom section with logo and badge */}
-          <div className="border-t border-[#6B6B6B] pt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-[#C4C4C2] text-sm">
                 © 2025 Beautifully Done. All rights reserved.
