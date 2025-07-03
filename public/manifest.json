@@ -1,0 +1,25 @@
+{
+  "name": "Beautifully Done - Get a Store You're Proud Of",
+  "short_name": "Beautifully Done",
+  "description": "Get a store you're proud of—live in 24 hours. No tech headaches. No agency fees. Just your new store ready to sell.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#161616",
+  "theme_color": "#FF6B0A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "shopping", "productivity"],
+  "lang": "en-US"
+}

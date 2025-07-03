@@ -2,10 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Viewport and Mobile Optimization -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beautifully Done</title>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Beautifully Done - Get a Store You're Proud Of Live in 24 Hours</title>
+    <meta name="title" content="Beautifully Done - Get a Store You're Proud Of Live in 24 Hours" />
     <meta name="description" content="Get a store you're proud of—live in 24 hours. No tech headaches. No agency fees. Just your new store ready to sell." />
+    <meta name="keywords" content="ecommerce store design, shopify design, online store, website design, conversion optimization, ecommerce development" />
+    <meta name="author" content="Beautifully Done" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://melodious-beignet-836363.netlify.app/" />
+    <meta property="og:title" content="Beautifully Done - Get a Store You're Proud Of Live in 24 Hours" />
+    <meta property="og:description" content="Get a store you're proud of—live in 24 hours. No tech headaches. No agency fees. Just your new store ready to sell." />
+    <meta property="og:image" content="https://melodious-beignet-836363.netlify.app/apple-touch-icon.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Beautifully Done" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://melodious-beignet-836363.netlify.app/" />
+    <meta property="twitter:title" content="Beautifully Done - Get a Store You're Proud Of Live in 24 Hours" />
+    <meta property="twitter:description" content="Get a store you're proud of—live in 24 hours. No tech headaches. No agency fees. Just your new store ready to sell." />
+    <meta property="twitter:image" content="https://melodious-beignet-836363.netlify.app/apple-touch-icon.svg" />
+    <meta property="twitter:creator" content="@beautifullydone" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#FF6B0A" />
+    <meta name="msapplication-TileColor" content="#FF6B0A" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://melodious-beignet-836363.netlify.app/" />
     
     <!-- Preload critical fonts for faster rendering -->
     <link rel="preload" href="/src/fonts/ClashDisplay-Variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -17,6 +59,29 @@
     
     <!-- Load Inter with font-display: swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="//hook.us2.make.com">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Beautifully Done",
+      "description": "Get a store you're proud of—live in 24 hours. No tech headaches. No agency fees.",
+      "url": "https://melodious-beignet-836363.netlify.app/",
+      "logo": "https://melodious-beignet-836363.netlify.app/apple-touch-icon.svg",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "availableLanguage": "English"
+      },
+      "areaServed": "Worldwide",
+      "serviceType": "E-commerce Store Design and Development"
+    }
+    </script>
     
     <!-- Load critical CSS first -->
     <style>
@@ -41,10 +106,30 @@
       html {
         font-family: 'ClashDisplay-Variable', 'Inter', system-ui, sans-serif;
       }
+      
+      /* Loading state to prevent FOUC */
+      #root {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      #root.loaded {
+        opacity: 1;
+      }
     </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Loading optimization script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const root = document.getElementById('root');
+        setTimeout(() => {
+          root.classList.add('loaded');
+        }, 100);
+      });
+    </script>
   </body>
 </html>
