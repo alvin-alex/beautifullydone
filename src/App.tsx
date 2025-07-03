@@ -273,12 +273,12 @@ function App() {
               </p>
             </div>
             
-            {/* Bolt Badge - Updated with Imgur link */}
+            {/* Company Logo */}
             <div className="flex items-center">
               <img 
-                src="https://i.imgur.com/IW2FOnu.png" 
-                alt="Powered by Bolt" 
-                className="h-8 opacity-80 hover:opacity-100 transition-opacity duration-200"
+                src="https://i.imgur.com/mBkue2A.png" 
+                alt="Beautifully Done Logo" 
+                className="h-12 opacity-80 hover:opacity-100 transition-opacity duration-200"
               />
             </div>
           </div>
