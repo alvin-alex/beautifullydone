@@ -119,7 +119,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
           <div className="w-16 h-16 bg-[#FF6B0A] rounded-full flex items-center justify-center mx-auto mb-6">
             <ArrowRight size={24} className="text-[#FFFFFF]" />
           </div>
-          <h2 className="text-3xl font-bold text-[#EEEDEC] mb-4">
+          <h2 className="font-heading text-3xl font-bold text-[#EEEDEC] mb-4">
             Thank you!
           </h2>
           <p className="text-base text-[#C4C4C2] mb-8">
@@ -137,7 +137,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
 
     return (
       <div>
-        <h2 className="text-3xl font-bold text-[#EEEDEC] mb-2 text-center">
+        <h2 className="font-heading text-3xl font-bold text-[#EEEDEC] mb-2 text-center">
           Get Your Store Preview
         </h2>
         <p className="text-base text-[#C4C4C2] mb-8 text-center">

@@ -21,7 +21,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-radial from-[#F36103]/5 via-transparent to-transparent"></div>
         
         <div className="relative text-center max-w-4xl mx-auto px-4 z-10">
-          <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
+          <h1 className="font-heading text-4xl md:text-6xl font-semibold mb-6 leading-tight">
             Get a Store You're <span className="text-[#FF6B0A]">Proud Of.</span><span className="font-light"> Live in</span> 24 Hours
           </h1>
           <h2 className="text-base md:text-2xl text-[#C4C4C2] mb-8 max-w-3xl mx-auto">
@@ -54,7 +54,7 @@ function App() {
       <section className="py-24 px-4 bg-[#161616] tracking-[0.08em]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#FF6B0A] mb-6">
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-[#FF6B0A] mb-6">
               Your store needs an upgrade...
             </h2>
             <p className="text-base md:text-2xl text-[#C4C4C2] mb-8 md:mb-16">
@@ -69,7 +69,7 @@ function App() {
 
             {/* Agitation Section */}
             <div className="mt-16 mb-[200px]">
-              <h2 className="text-xl md:text-3xl font-bold text-[#EEEDEC] mb-8 text-center">
+              <h2 className="font-heading text-xl md:text-3xl font-bold text-[#EEEDEC] mb-8 text-center">
                 You're Already Overwhelmed.
               </h2>
               
@@ -81,7 +81,7 @@ function App() {
                 {/* Card 1: Outdated Design */}
                 <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#6B6B6B] hover:border-[#FF6B0A] hover:shadow-lg transition-all duration-200">
                   <X size={20} className="absolute top-4 left-4 text-[#FF4444]" />
-                  <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                  <h3 className="font-heading text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
                     Outdated Design
                   </h3>
                   <p className="text-sm text-[#C4C4C2]">
@@ -92,7 +92,7 @@ function App() {
                 {/* Card 2: Confusing Navigation */}
                 <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#6B6B6B] hover:border-[#FF6B0A] hover:shadow-lg transition-all duration-200">
                   <X size={20} className="absolute top-4 left-4 text-[#FF4444]" />
-                  <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                  <h3 className="font-heading text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
                     Confusing Navigation
                   </h3>
                   <p className="text-sm text-[#C4C4C2]">
@@ -103,7 +103,7 @@ function App() {
                 {/* Card 3: Missed Sales Opportunities */}
                 <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#6B6B6B] hover:border-[#FF6B0A] hover:shadow-lg transition-all duration-200">
                   <X size={20} className="absolute top-4 left-4 text-[#FF4444]" />
-                  <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                  <h3 className="font-heading text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
                     Missed Sales Opportunities
                   </h3>
                   <p className="text-sm text-[#C4C4C2]">
@@ -114,7 +114,7 @@ function App() {
                 {/* Card 4: Hidden Costs & Delays */}
                 <div className="relative bg-[#1D1C1C] p-4 rounded-lg border border-[#6B6B6B] hover:border-[#FF6B0A] hover:shadow-lg transition-all duration-200">
                   <X size={20} className="absolute top-4 left-4 text-[#FF4444]" />
-                  <h3 className="text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
+                  <h3 className="font-heading text-xl font-bold text-[#EEEDEC] mt-8 mb-2">
                     Hidden Costs & Delays
                   </h3>
                   <p className="text-sm text-[#C4C4C2]">
@@ -124,7 +124,7 @@ function App() {
               </div>
             </div>
 
-            <h3 className="text-3xl md:text-4xl font-semibold text-[#EEEDEC] mb-12">
+            <h3 className="font-heading text-3xl md:text-4xl font-semibold text-[#EEEDEC] mb-12">
               So How Do You Get a Store That Actually Converts?
             </h3>
           </div>
@@ -136,7 +136,7 @@ function App() {
                 <Code size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="font-heading text-xl font-bold text-[#FF6B0A] mb-3">
                   BUILD IT YOURSELF?
                 </h4>
                 <p className="text-[#C4C4C2] text-base">
@@ -151,7 +151,7 @@ function App() {
                 <Users size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="font-heading text-xl font-bold text-[#FF6B0A] mb-3">
                   HIRE A DEVELOPER?
                 </h4>
                 <p className="text-[#C4C4C2] text-base">
@@ -166,7 +166,7 @@ function App() {
                 <Palette size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="font-heading text-xl font-bold text-[#FF6B0A] mb-3">
                   USE A TEMPLATE?
                 </h4>
                 <p className="text-[#C4C4C2] text-base">
@@ -177,7 +177,7 @@ function App() {
           </div>
 
           <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-semibold text-[#EEEDEC] mb-8">
+            <h3 className="font-heading text-3xl md:text-4xl font-semibold text-[#EEEDEC] mb-8">
               "OK... But What Makes You Different?"
             </h3>
           </div>
@@ -189,7 +189,7 @@ function App() {
                 <Clock size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="font-heading text-xl font-bold text-[#FF6B0A] mb-3">
                   SPEED
                 </h4>
                 <p className="text-[#C4C4C2] text-base">
@@ -204,7 +204,7 @@ function App() {
                 <Target size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="font-heading text-xl font-bold text-[#FF6B0A] mb-3">
                   PROVEN
                 </h4>
                 <p className="text-[#C4C4C2] text-base">
@@ -219,7 +219,7 @@ function App() {
                 <CheckCircle size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="font-heading text-xl font-bold text-[#FF6B0A] mb-3">
                   EFFORTLESS
                 </h4>
                 <p className="text-[#C4C4C2] text-base">
@@ -234,7 +234,7 @@ function App() {
                 <Shield size={24} className="text-[#FFFFFF]" />
               </div>
               <div>
-                <h4 className="text-xl font-bold text-[#FF6B0A] mb-3">
+                <h4 className="font-heading text-xl font-bold text-[#FF6B0A] mb-3">
                   GUARANTEED
                 </h4>
                 <p className="text-[#C4C4C2] text-base">
@@ -249,7 +249,7 @@ function App() {
       {/* Final CTA Section */}
       <section className="pt-24 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-8">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#EEEDEC] mb-8">
             Ready for your dream store?
           </h2>
           <button 
