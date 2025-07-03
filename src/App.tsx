@@ -22,7 +22,7 @@ function App() {
         
         <div className="relative text-center max-w-4xl mx-auto px-4 z-10">
           <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
-            Get a Store You're <span className="text-[#FF6B0A]">Proud Of</span><span className="font-light"> Live in</span> 24 Hours
+            Get a Store You're <span className="text-[#FF6B0A]">Proud Of.</span><span className="font-light"> Live in</span> 24 Hours
           </h1>
           <h2 className="text-base md:text-2xl text-[#C4C4C2] mb-8 max-w-3xl mx-auto">
             {/* Mobile version */}
