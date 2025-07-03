@@ -17,16 +17,6 @@ function App() {
     <div className="min-h-screen bg-[#161616] text-[#EEEDEC] tracking-wider">
       {/* Hero Section */}
       <section className="min-h-[80vh] md:h-screen relative flex items-center justify-center">
-        {/* Logo and Brand Header */}
-        <div className="absolute top-6 left-6 flex items-center space-x-3 z-20">
-          <div className="w-10 h-10 bg-[#FF6B0A] rounded-full flex items-center justify-center">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 6h4.875c1.45 0 2.625 1.175 2.625 2.625 0 .9-.45 1.7-1.15 2.175.9.45 1.525 1.35 1.525 2.375 0 1.45-1.175 2.625-2.625 2.625H6V6zm2.25 1.5v2.25h2.625c.2 0 .375-.175.375-.375s-.175-.375-.375-.375H8.25zm0 3.75v2.25h2.625c.2 0 .375-.175.375-.375s-.175-.375-.375-.375H8.25z" fill="white"/>
-            </svg>
-          </div>
-          <span className="text-[#EEEDEC] font-semibold text-lg">Beautifully Done</span>
-        </div>
-
         {/* Subtle orange gradient background */}
         <div className="absolute inset-0 bg-gradient-radial from-[#F36103]/5 via-transparent to-transparent"></div>
         
