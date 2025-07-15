@@ -186,10 +186,12 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             <input
               type="text"
               placeholder="yourstore.myshopify.com or yourwebsite.com"
+          }
           {errors.name && <p className="text-error-red text-sm mt-2">{errors.name}</p>}
               onChange={(e) => setFormData(prev => ({ ...prev, storeUrl: e.target.value }))}
               className={`w-full px-6 py-4 bg-[#1D1C1C] border rounded-lg text-[#EEEDEC] placeholder-[#8A8A8A] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 focus:border-[#FF6B0A] transition-all duration-200 text-base ${
                 errors.storeUrl ? 'border-[#FF4444]' : 'border-[#6B6B6B]'
+              }
           <label className="block text-theme-text font-medium mb-2 text-base">
               disabled={isSubmitting}
             />
@@ -200,6 +202,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
           </div>
             className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
               errors.email ? 'border-error-red' : 'border-theme-border'
+            }
             <div className="bg-[#FF4444]/10 border border-[#FF4444]/30 rounded-lg p-4">
               <p className="text-[#FF4444] text-sm">{errors.submit}</p>
             </div>
@@ -215,16 +218,21 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
                 <div className="w-5 h-5 border-2 border-[#FFFFFF] border-t-transparent rounded-full animate-spin"></div>
                 <span>Submitting...</span>
               </>
+            )
+            }
             className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
               errors.storeUrl ? 'border-error-red' : 'border-theme-border'
                 <span>Get Started</span>
                 <ArrowRight size={20} />
               </>
+            }
           {errors.storeUrl && <p className="text-error-red text-sm mt-2">{errors.storeUrl}</p>}
           <p className="text-theme-text-secondary text-sm mt-2">
         </form>
+      }
       </div>
     );
+  }
   };
 
           <div className="bg-error-red/10 border border-error-red/30 rounded-lg p-4">
@@ -255,3 +263,4 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
 };
         <div className="w-16 h-16 bg-theme-primary rounded-full flex items-center justify-center mx-auto mb-6">
           <ArrowRight size={24} className="text-white" />
+}
