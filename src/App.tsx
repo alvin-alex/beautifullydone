@@ -289,9 +289,7 @@ function App() {
               <img 
                 src="/logo/10.svg" 
                 alt="Beautifully Done Logo" 
-                
-  )
-}className="h-24 opacity-80 hover:opacity-100 transition-opacity duration-200 hidden dark:block"
+                className="h-24 opacity-80 hover:opacity-100 transition-opacity duration-200 hidden dark:block"
               />
             </div>
           </div>
@@ -305,5 +303,3 @@ function App() {
 }
 
 export default App;
-  )
-}
