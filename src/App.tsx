@@ -279,10 +279,17 @@ function App() {
             
             {/* Company Logo */}
             <div className="flex items-center">
+              {/* Light mode logo */}
               <img 
                 src="/logo/11.svg" 
                 alt="Beautifully Done Logo" 
-                className="h-24 opacity-80 hover:opacity-100 transition-opacity duration-200 invert dark:invert-0"
+                className="h-24 opacity-80 hover:opacity-100 transition-opacity duration-200 dark:hidden"
+              />
+              {/* Dark mode logo */}
+              <img 
+                src="/logo/10.svg" 
+                alt="Beautifully Done Logo" 
+                className="h-24 opacity-80 hover:opacity-100 transition-opacity duration-200 hidden dark:block"
               />
             </div>
           </div>
