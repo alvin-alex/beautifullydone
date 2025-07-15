@@ -105,153 +105,131 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
       } else {
         setErrors({ submit: 'Something went wrong. Please try again.' });
       }
-    } catch (error) {
-      setErrors({ submit: 'Network error. Please check your connection and try again.' });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const renderContent = () => {
-    if (isSubmitted) {
-      return (
-        <div className="text-center">
-          <div className="w-16 h-16 bg-[#FF6B0A] rounded-full flex items-center justify-center mx-auto mb-6">
-            <ArrowRight size={24} className="text-[#FFFFFF]" />
-          </div>
-          <h2 className="font-heading text-3xl font-bold text-[#EEEDEC] mb-4">
-            Thank you!
-          </h2>
-          <p className="text-base text-[#C4C4C2] mb-8">
-            We've received your information and will be in touch within 24 hours with your store preview.
-          </p>
-          <button
-            onClick={handleClose}
-            className="bg-[#FF6B0A] hover:bg-[#E55A00] focus:bg-[#E55A00] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 text-[#FFFFFF] px-8 py-3 text-base font-medium rounded-lg transition-all duration-200"
-          >
-            Close
-          </button>
-        </div>
-      );
-    }
-
-    return (
-      <div>
-        <h2 className="font-heading text-3xl font-bold text-[#EEEDEC] mb-2 text-center">
-          Get Your Store Preview
-        </h2>
-        <p className="text-base text-[#C4C4C2] mb-8 text-center">
-          Tell us about your business and we'll create a preview of your new store in 24 hours.
-        </p>
-        
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-        <h2 className="font-heading text-3xl font-bold text-theme-text mb-4">
-              Your Name
-            </label>
-        <p className="text-base text-theme-text-secondary mb-8">
-              type="text"
-              placeholder="Enter your full name"
-              value={formData.name}
-              onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-          className="bg-theme-primary hover:bg-theme-primary-hover focus:bg-theme-primary-hover focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-8 py-3 text-base font-medium rounded-lg transition-all duration-200"
-                errors.name ? 'border-[#FF4444]' : 'border-[#6B6B6B]'
-              }`}
-              disabled={isSubmitting}
-            />
-            {errors.name && <p className="text-[#FF4444] text-sm mt-2">{errors.name}</p>}
-          </div>
-          
-          <div>
-            <label className="block text-[#EEEDEC] font-medium mb-2 text-base">
-      <h2 className="font-heading text-3xl font-bold text-theme-text mb-2 text-center">
-            </label>
-            <input
-      <p className="text-base text-theme-text-secondary mb-8 text-center">
-              placeholder="your@email.com"
-              value={formData.email}
-              onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-              className={`w-full px-6 py-4 bg-[#1D1C1C] border rounded-lg text-[#EEEDEC] placeholder-[#8A8A8A] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 focus:border-[#FF6B0A] transition-all duration-200 text-base ${
-                errors.email ? 'border-[#FF4444]' : 'border-[#6B6B6B]'
-          <label className="block text-theme-text font-medium mb-2 text-base">
-              disabled={isSubmitting}
-            />
-            {errors.email && <p className="text-[#FF4444] text-sm mt-2">{errors.email}</p>}
-          </div>
-          
-          <div>
-            <label className="block text-[#EEEDEC] font-medium mb-2 text-base">
-            className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
-              errors.name ? 'border-error-red' : 'border-theme-border'
-            <input
-              type="text"
-              placeholder="yourstore.myshopify.com or yourwebsite.com"
-          }
-          {errors.name && <p className="text-error-red text-sm mt-2">{errors.name}</p>}
-              onChange={(e) => setFormData(prev => ({ ...prev, storeUrl: e.target.value }))}
-              className={`w-full px-6 py-4 bg-[#1D1C1C] border rounded-lg text-[#EEEDEC] placeholder-[#8A8A8A] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 focus:border-[#FF6B0A] transition-all duration-200 text-base ${
-                errors.storeUrl ? 'border-[#FF4444]' : 'border-[#6B6B6B]'
-              }
-          <label className="block text-theme-text font-medium mb-2 text-base">
-              disabled={isSubmitting}
-            />
-            {errors.storeUrl && <p className="text-[#FF4444] text-sm mt-2">{errors.storeUrl}</p>}
-            <p className="text-[#8A8A8A] text-sm mt-2">
-              Don't have a store yet? Just enter your business website or social media profile.
-            </p>
-          </div>
-            className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
-              errors.email ? 'border-error-red' : 'border-theme-border'
-            }
-            <div className="bg-[#FF4444]/10 border border-[#FF4444]/30 rounded-lg p-4">
-              <p className="text-[#FF4444] text-sm">{errors.submit}</p>
-            </div>
-          {errors.email && <p className="text-error-red text-sm mt-2">{errors.email}</p>}
-          
-          <button
-            type="submit"
-          <label className="block text-theme-text font-medium mb-2 text-base">
-            className="w-full bg-[#FF6B0A] hover:bg-[#E55A00] focus:bg-[#E55A00] focus:outline-none focus:ring-4 focus:ring-[#FF6B0A]/30 text-[#FFFFFF] px-6 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center justify-center space-x-3 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {isSubmitting ? (
-              <>
-                <div className="w-5 h-5 border-2 border-[#FFFFFF] border-t-transparent rounded-full animate-spin"></div>
-                <span>Submitting...</span>
-              </>
-            )
-            }
-            className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
-              errors.storeUrl ? 'border-error-red' : 'border-theme-border'
-                <span>Get Started</span>
-                <ArrowRight size={20} />
-              </>
-            }
-          {errors.storeUrl && <p className="text-error-red text-sm mt-2">{errors.storeUrl}</p>}
-          <p className="text-theme-text-secondary text-sm mt-2">
-        </form>
-      }
-      </div>
-    );
-  }
-  };
-
-          <div className="bg-error-red/10 border border-error-red/30 rounded-lg p-4">
-            <p className="text-error-red text-sm">{errors.submit}</p>
-      className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
-      onClick={handleBackdropClick}
-    >
-      <div 
-        className="bg-theme-bg rounded-lg p-6 md:p-12 max-w-2xl w-full max-h-[90vh] border border-theme-border relative overflow-y-auto"
-        onClick={(e) => e.stopPropagation()}
-          className="w-full bg-theme-primary hover:bg-theme-primary-hover focus:bg-theme-primary-hover focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center justify-center space-x-3 disabled:opacity-50 disabled:cursor-not-allowed"
-        {/* Close button */}
-        <button
-          onClick={handleClose}
-              <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+        <label className="block text-theme-text font-medium mb-2 text-base">
+          Your Name
+        </label>
+        <input
+          type="text"
+          placeholder="Enter your full name"
+          value={formData.name}
+          onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+          className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
+            errors.name ? 'border-error-red' : 'border-theme-border'
+          }`}
           disabled={isSubmitting}
-        >
-          <X size={24} />
-        </button>
+        />
+        {errors.name && <p className="text-error-red text-sm mt-2">{errors.name}</p>}
+      </div>
+      
+      <div>
+        <label className="block text-theme-text font-medium mb-2 text-base">
+          Your Email
+        </label>
+        <input
+          type="email"
+          placeholder="your@email.com"
+          value={formData.email}
+          onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+          className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
+            errors.email ? 'border-error-red' : 'border-theme-border'
+          }`}
+          disabled={isSubmitting}
+        />
+        {errors.email && <p className="text-error-red text-sm mt-2">{errors.email}</p>}
+      </div>
+      
+      <div>
+        <label className="block text-theme-text font-medium mb-2 text-base">
+          Your Current Store URL
+        </label>
+        <input
+          type="url"
+          placeholder="yourstore.myshopify.com or yourwebsite.com"
+          value={formData.storeUrl}
+          onChange={(e) => setFormData(prev => ({ ...prev, storeUrl: e.target.value }))}
+          className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
+            errors.storeUrl ? 'border-error-red' : 'border-theme-border'
+          }`}
+          disabled={isSubmitting}
+        />
+        {errors.storeUrl && <p className="text-error-red text-sm mt-2">{errors.storeUrl}</p>}
+        <p className="text-theme-text-secondary text-sm mt-2">
+          Don't have a store yet? Just enter your business website or social media profile.
+        </p>
+      </div>
+      
+      {errors.submit && (
+        <div className="bg-error-red/10 border border-error-red/30 rounded-lg p-4">
+          <p className="text-error-red text-sm">{errors.submit}</p>
+        </div>
+      )}
+      
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full bg-theme-primary hover:bg-theme-primary-hover focus:bg-theme-primary-hover focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center justify-center space-x-3 disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {isSubmitting ? (
+          <>
+            <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+            <span>Submitting...</span>
+          </>
+        ) : (
+          <>
+            <span>Get Started</span>
+            <ArrowRight size={20} />
+          </>
+        )}
+      </button>
+    </form>
+  </div>
+);
+};
+
+return (
+  <div 
+    className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+    onClick={handleBackdropClick}
+  >
+    <div 
+      className="bg-theme-bg rounded-lg p-6 md:p-12 max-w-2xl w-full max-h-[90vh] border border-theme-border relative overflow-y-auto"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Close button */}
+      <button
+        onClick={handleClose}
+        className="absolute top-4 right-4 text-theme-text-secondary hover:text-theme-primary transition-colors duration-200"
+        disabled={isSubmitting}
+      >
+        <X size={24} />
+      </button>
+
+      {/* Content */}
+      <div className="pr-12">
+        {renderContent()}
+      </div>
+    </div>
+  </div>
+);
+};
+      <div className="w-16 h-16 bg-theme-primary rounded-full flex items-center justify-center mx-auto mb-6">
+        <ArrowRight size={24} className="text-white" />
+      </div>
+      <h2 className="font-heading text-3xl font-bold text-theme-text mb-4">
+        Thank you!
+      </h2>
+      <p className="text-base text-theme-text-secondary mb-8">
+        We've received your information and will be in touch within 24 hours with your store preview.
+      </p>
+      <button
+        onClick={handleClose}
+        className="bg-theme-primary hover:bg-theme-primary-hover focus:bg-theme-primary-hover focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-8 py-3 text-base font-medium rounded-lg transition-all duration-200"
+      >
+        Close
+      </button>
+    </div>
+  );
+}
 
         {/* Content */}
         <div className="pr-12">
