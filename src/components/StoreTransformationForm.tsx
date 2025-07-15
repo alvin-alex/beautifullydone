@@ -106,9 +106,9 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
         setErrors({ submit: 'Something went wrong. Please try again.' });
       }
     } catch (error) {
-      setErrors({ submit: 'Something went wrong. Please try again.' });
+        setErrors({ submit: 'Something went wrong. Please try again.' });
     } finally {
-      setIsSubmitting(false);
+        setIsSubmitting(false);
     }
   };
 
@@ -137,15 +137,6 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
 
     return (
       <form onSubmit={handleSubmit} className="space-y-6">
-        <div>
-          <h2 className="font-heading text-3xl font-bold text-theme-text mb-4">
-            Transform Your Store
-          </h2>
-          <p className="text-base text-theme-text-secondary mb-8">
-            Enter your details below and we'll show you how your store could look with our premium theme.
-          </p>
-        </div>
-
         <div>
           <label className="block text-theme-text font-medium mb-2 text-base">
             Your Name
