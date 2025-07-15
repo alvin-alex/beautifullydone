@@ -276,7 +276,7 @@ function App() {
             {/* Company Logo */}
             <div className="flex items-center">
               <img 
-                src="/black-butterfly.svg" 
+                src="/11.svg" 
                 alt="Beautifully Done Logo" 
                 className="h-12 opacity-80 hover:opacity-100 transition-opacity duration-200"
               />
