@@ -54,7 +54,6 @@ export default {
         'heading': ['Cabinet Grotesk', 'sans-serif'],
         'sans': ['Manrope', 'sans-serif'],
         'cabinet': ['Cabinet Grotesk', 'sans-serif'],
-        'satoshi': ['Satoshi', 'sans-serif'],
         'manrope': ['Manrope', 'sans-serif'],
         'space-grotesk': ['Space Grotesk', 'sans-serif'],
         'epilogue': ['Epilogue', 'sans-serif'],
