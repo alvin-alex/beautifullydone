@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Zap, Trophy, TrendingUp, ArrowRight, Code, Users, Palette, Clock, Target, Shield, CheckCircle, X } from 'lucide-react';
 import { StoreTransformationForm } from './components/StoreTransformationForm';
+import { DarkModeToggle } from './components/DarkModeToggle';
 
 function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -19,6 +20,11 @@ function App() {
       <section className="min-h-[80vh] md:h-screen relative flex items-center justify-center">
         {/* Subtle orange gradient background */}
         <div className="absolute inset-0 bg-gradient-radial from-theme-primary/5 via-transparent to-transparent"></div>
+        
+        {/* Dark Mode Toggle */}
+        <div className="absolute top-4 right-4 z-10">
+          <DarkModeToggle />
+        </div>
         
         <div className="relative text-center max-w-4xl mx-auto px-4 z-10">
           <h1 className="font-heading text-4xl md:text-6xl font-semibold mb-6 leading-tight">
