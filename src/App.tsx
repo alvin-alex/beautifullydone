@@ -267,7 +267,7 @@ function App() {
       </section>
 
       {/* Footer Section */}
-      <footer className="pt-24 pb-12 px-4 bg-theme-bg border-t border-theme-border">
+      <footer className="pt-24 pb-12 px-4 bg-theme-bg">
         <div className="max-w-6xl mx-auto">
           {/* Bottom section with logo and badge */}
           <div className="flex flex-col md:flex-row justify-between items-center">
