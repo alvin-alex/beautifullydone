@@ -52,9 +52,9 @@ function App() {
           </h2>
           <button 
             onClick={handleCTAClick}
-            className="bg-gradient-cta hover:opacity-90 focus:opacity-90 focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-8 py-3 text-base font-manrope font-semibold rounded-lg transition-all duration-200"
+            className="bg-gradient-cta hover:opacity-90 focus:opacity-90 focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 py-2 text-base font-manrope font-semibold rounded-lg transition-all duration-200"
           >
-            See My New Store
+            Get Started
           </button>
         </div>
       </section>
@@ -263,9 +263,9 @@ function App() {
           </h2>
           <button 
             onClick={handleCTAClick}
-            className="bg-gradient-cta hover:opacity-90 focus:opacity-90 focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-8 py-3 text-base font-manrope font-semibold rounded-lg transition-all duration-200 mb-8"
+            className="bg-gradient-cta hover:opacity-90 focus:opacity-90 focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 py-2 text-base font-manrope font-semibold rounded-lg transition-all duration-200 mb-8"
           >
-            See My New Store
+            Get Started
           </button>
         </div>
       </section>

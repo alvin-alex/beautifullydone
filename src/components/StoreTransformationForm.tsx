@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { X, ArrowRight, CheckCircle, AlertCircle, Info } from 'lucide-react';
+import { X, CheckCircle, AlertCircle, Info } from 'lucide-react';
 
 interface StoreTransformationFormProps {
   isOpen: boolean;
@@ -418,18 +418,15 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
           <button
             type="submit"
             disabled={isSubmitting || !isFormValid()}
-            className="w-full bg-theme-primary hover:bg-theme-primary-hover focus:bg-theme-primary-hover focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center justify-center space-x-3 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-theme-primary hover:bg-theme-primary-hover focus:bg-theme-primary-hover focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 py-3 text-base font-manrope font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? (
               <>
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                <span>Creating Your Preview...</span>
+                <span className="ml-3">Creating Preview...</span>
               </>
             ) : (
-              <>
-                <span>Get My Store Preview</span>
-                <ArrowRight size={20} />
-              </>
+              <span>Get Preview</span>
             )}
           </button>
           
