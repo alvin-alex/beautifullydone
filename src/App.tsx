@@ -30,7 +30,6 @@ function App() {
           <h1 className="font-heading text-4xl md:text-6xl font-semibold mb-6 leading-tight">
             Get a Store You're <span className="text-theme-primary">Proud Of.</span><span className="font-light"> Live in</span> 24 Hours
           </h1>
-          <h2 className="text-base md:text-2xl text-theme-text-secondary mb-8 max-w-3xl mx-auto">
           <h2 className="text-base md:text-2xl text-theme-text-secondary mb-16 max-w-3xl mx-auto">
             {/* Mobile version */}
             <span className="md:hidden">
