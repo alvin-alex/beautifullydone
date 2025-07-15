@@ -28,7 +28,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-radial from-theme-primary/5 via-transparent to-transparent"></div>
         
         {/* Dark Mode Toggle */}
-        <div className="absolute top-4 right-4 z-10">
+        <div className="fixed top-4 right-4 z-50">
           <DarkModeToggle />
         </div>
         
