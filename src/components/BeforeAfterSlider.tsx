@@ -73,6 +73,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
           src={afterImage} 
           alt="After"
           className="w-full h-full object-cover"
+          loading="lazy"
           draggable={false}
         />
         <div className="absolute bottom-4 right-4 bg-theme-primary text-theme-bg px-3 py-1 text-sm font-medium">
@@ -89,6 +90,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
           src={beforeImage} 
           alt="Before"
           className="w-full h-full object-cover"
+          loading="lazy"
           draggable={false}
         />
         <div className="absolute bottom-4 left-4 bg-theme-primary text-theme-bg px-3 py-1 text-sm font-medium">

@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { Zap, Trophy, TrendingUp, ArrowRight, Code, Users, Palette, Clock, Target, Shield, CheckCircle, X } from 'lucide-react';
-import { StoreTransformationForm } from './components/StoreTransformationForm';
 import { DarkModeToggle } from './components/DarkModeToggle';
+
+// Lazy load the StoreTransformationForm component for better performance
+const LazyStoreTransformationForm = lazy(() => 
+  import('./components/StoreTransformationForm').then(module => ({
+    default: module.StoreTransformationForm
+  }))
+);
 
 function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -297,7 +303,9 @@ function App() {
       </footer>
 
       {/* Store Transformation Form Modal */}
-      <StoreTransformationForm isOpen={isFormOpen} onClose={handleCloseForm} />
+      <Suspense fallback={null}>
+        <LazyStoreTransformationForm isOpen={isFormOpen} onClose={handleCloseForm} />
+      </Suspense>
     </div>
   );
 }
