@@ -74,6 +74,7 @@ export default {
         '16': '16px',
         '32': '32px',
         '23': '23px',
+        '43': '43px',
       },
       maxWidth: {
         'prose': '65ch',
