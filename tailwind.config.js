@@ -33,9 +33,9 @@ export default {
         'neutral-black': '#333333',
         
         // Semantic Palette
-        'success-teal': '#00BFA5',
+        'success-teal': 'var(--color-success)',
         'warning-yellow': '#F1C40F',
-        'error-red': '#E63946',
+        'error-red': 'var(--color-error)',
         'info-blue': '#F0E0E0',
         
         // Theme-aware colors using CSS variables
