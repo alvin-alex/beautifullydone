@@ -9,15 +9,15 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://i.imgur.com/mBkue2A.png",
+      "src": "/black-butterfly.svg",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "https://i.imgur.com/mBkue2A.png",
+      "src": "/black-butterfly.svg",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/svg+xml"
     }
   ],
   "categories": ["business", "shopping", "productivity"],
