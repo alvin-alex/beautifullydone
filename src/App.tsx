@@ -31,7 +31,6 @@ function App() {
             Get a Store You're <span className="text-theme-primary">Proud Of.</span><span className="font-light"> Live in</span> 24 Hours
           </h1>
           <h2 className="text-base md:text-2xl text-theme-text-secondary mb-8 max-w-3xl mx-auto">
-          <h2 className="text-base md:text-2xl text-theme-text-secondary mb-43 max-w-3xl mx-auto">
             {/* Mobile version */}
             <span className="md:hidden">
               No tech headaches. No agency fees.
