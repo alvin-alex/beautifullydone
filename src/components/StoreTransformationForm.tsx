@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { X, ArrowRight } from 'lucide-react';
 
 interface StoreTransformationFormProps {
@@ -51,29 +51,110 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
 
   const isValidUrl = (url: string) => {
     if (!url.trim()) return false;
-    try {
-      new URL(url);
+    
+    // More forgiving URL validation
+    const urlPattern = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/i;
+    const socialPattern = /^(https?:\/\/)?(www\.)?(facebook|instagram|twitter|linkedin|tiktok|youtube)\.com\/[\w\.-]+$/i;
+    
+    // Check if it's a valid URL pattern or social media profile
+    if (urlPattern.test(url) || socialPattern.test(url)) {
       return true;
-    } catch {
-      try {
-        new URL(`https://${url}`);
-        return true;
-      } catch {
-        return false;
-      }
+    }
+    
+    // Try with https:// prefix
+    if (urlPattern.test(`https://${url}`)) {
+      return true;
+    }
+    
+    return false;
+  };
+
+  const validateField = useCallback((field: string, value: string) => {
+    const newErrors = { ...errors };
+    
+    switch (field) {
+      case 'name':
+        if (!value.trim()) {
+          newErrors.name = 'Name is required';
+        } else if (value.trim().length < 2) {
+          newErrors.name = 'Name must be at least 2 characters';
+        } else {
+          delete newErrors.name;
+        }
+        break;
+        
+      case 'email':
+        if (!value.trim()) {
+          newErrors.email = 'Email is required';
+        } else if (!validateEmail(value)) {
+          newErrors.email = 'Please enter a valid email address';
+        } else {
+          delete newErrors.email;
+        }
+        break;
+        
+      case 'storeUrl':
+        if (!value.trim()) {
+          newErrors.storeUrl = 'Store URL is required';
+        } else if (!isValidUrl(value)) {
+          newErrors.storeUrl = 'Please enter a valid website or social media URL';
+        } else {
+          delete newErrors.storeUrl;
+        }
+        break;
+    }
+    
+    setErrors(newErrors);
+  }, [errors]);
+
+  // Debounced validation
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      Object.keys(formData).forEach(field => {
+        const value = formData[field as keyof FormData];
+        if (value.trim()) { // Only validate non-empty fields
+          validateField(field, value);
+        }
+      });
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [formData, validateField]);
+
+  const handleInputChange = (field: keyof FormData, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+    
+    // Clear error immediately when user starts typing
+    if (errors[field]) {
+      const newErrors = { ...errors };
+      delete newErrors[field];
+      setErrors(newErrors);
     }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Immediate validation on submit
     const newErrors: Record<string, string> = {};
 
-    if (!formData.name.trim()) newErrors.name = 'Name is required';
-    if (!formData.email.trim()) newErrors.email = 'Email is required';
-    else if (!validateEmail(formData.email)) newErrors.email = 'Please enter a valid email';
-    if (!formData.storeUrl.trim()) newErrors.storeUrl = 'Store URL is required';
-    else if (!isValidUrl(formData.storeUrl)) newErrors.storeUrl = 'Please enter a valid URL';
+    if (!formData.name.trim()) {
+      newErrors.name = 'Name is required';
+    } else if (formData.name.trim().length < 2) {
+      newErrors.name = 'Name must be at least 2 characters';
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!validateEmail(formData.email)) {
+      newErrors.email = 'Please enter a valid email address';
+    }
+
+    if (!formData.storeUrl.trim()) {
+      newErrors.storeUrl = 'Store URL is required';
+    } else if (!isValidUrl(formData.storeUrl)) {
+      newErrors.storeUrl = 'Please enter a valid website or social media URL';
+    }
 
     setErrors(newErrors);
     if (Object.keys(newErrors).length > 0) return;
@@ -138,56 +219,74 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
     return (
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block text-theme-text font-medium mb-2 text-base">
-            Your Name
+          <label htmlFor="name" className="block text-theme-text font-medium mb-2 text-base">
+            Full Name
           </label>
           <input
+            id="name"
             type="text"
-            placeholder="Enter your full name"
+            placeholder="John Smith"
             value={formData.name}
-            onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+            onChange={(e) => handleInputChange('name', e.target.value)}
             className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
               errors.name ? 'border-error-red' : 'border-theme-border'
             }`}
             disabled={isSubmitting}
+            aria-describedby={errors.name ? 'name-error' : undefined}
           />
-          {errors.name && <p className="text-error-red text-sm mt-2">{errors.name}</p>}
+          {errors.name && (
+            <p id="name-error" className="text-error-red text-sm mt-2" role="alert">
+              {errors.name}
+            </p>
+          )}
         </div>
         
         <div>
-          <label className="block text-theme-text font-medium mb-2 text-base">
-            Your Email
+          <label htmlFor="email" className="block text-theme-text font-medium mb-2 text-base">
+            Email Address
           </label>
           <input
+            id="email"
             type="email"
-            placeholder="your@email.com"
+            placeholder="john@example.com"
             value={formData.email}
-            onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+            onChange={(e) => handleInputChange('email', e.target.value)}
             className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
               errors.email ? 'border-error-red' : 'border-theme-border'
             }`}
             disabled={isSubmitting}
+            aria-describedby={errors.email ? 'email-error' : undefined}
           />
-          {errors.email && <p className="text-error-red text-sm mt-2">{errors.email}</p>}
+          {errors.email && (
+            <p id="email-error" className="text-error-red text-sm mt-2" role="alert">
+              {errors.email}
+            </p>
+          )}
         </div>
         
         <div>
-          <label className="block text-theme-text font-medium mb-2 text-base">
-            Your Current Store URL
+          <label htmlFor="storeUrl" className="block text-theme-text font-medium mb-2 text-base">
+            Current Store or Website
           </label>
           <input
+            id="storeUrl"
             type="url"
-            placeholder="yourstore.myshopify.com or yourwebsite.com"
+            placeholder="mystore.com or instagram.com/mystore"
             value={formData.storeUrl}
-            onChange={(e) => setFormData(prev => ({ ...prev, storeUrl: e.target.value }))}
+            onChange={(e) => handleInputChange('storeUrl', e.target.value)}
             className={`w-full px-6 py-4 bg-theme-surface border rounded-lg text-theme-text placeholder-theme-text-secondary focus:outline-none focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary transition-all duration-200 text-base ${
               errors.storeUrl ? 'border-error-red' : 'border-theme-border'
             }`}
             disabled={isSubmitting}
+            aria-describedby={errors.storeUrl ? 'storeUrl-error' : 'storeUrl-help'}
           />
-          {errors.storeUrl && <p className="text-error-red text-sm mt-2">{errors.storeUrl}</p>}
-          <p className="text-theme-text-secondary text-sm mt-2">
-            Don't have a store yet? Just enter your business website or social media profile.
+          {errors.storeUrl && (
+            <p id="storeUrl-error" className="text-error-red text-sm mt-2" role="alert">
+              {errors.storeUrl}
+            </p>
+          )}
+          <p id="storeUrl-help" className="text-theme-text-secondary text-sm mt-2">
+            Enter your Shopify store, website, or social media profile URL
           </p>
         </div>
         
@@ -209,7 +308,7 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
             </>
           ) : (
             <>
-              <span>Get Started</span>
+              <span>Get My Store Preview</span>
               <ArrowRight size={20} />
             </>
           )}
