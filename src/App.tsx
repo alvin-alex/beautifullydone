@@ -33,17 +33,15 @@ function App() {
           <h2 className="text-base md:text-2xl text-theme-text-secondary mb-8 max-w-3xl mx-auto">
             {/* Mobile version */}
             <span className="md:hidden">
-              No tech headaches. 
-              <br /> 
-              No agency fees.
+              No tech headaches. No agency fees.
               <br />
-              Just your new store—live and ready to sell.
+              Just your new store live and ready to sell.
             </span>
             {/* Desktop version */}
             <span className="hidden md:block">
-              No tech headaches. No agency fees. Just your new store
+              No tech headaches. No agency fees.
               <br />
-              —live and ready to sell.
+              Just your new store live and ready to sell.
             </span>
           </h2>
           <button 
