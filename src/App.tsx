@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-theme-bg text-theme-text tracking-wider">
+    <div className="min-h-screen bg-theme-bg text-theme-text">
       {/* Hero Section */}
       <section className="min-h-[80vh] md:h-screen relative flex items-center justify-center">
         {/* Subtle orange gradient background */}
@@ -60,7 +60,7 @@ function App() {
       </section>
 
       {/* Problem-Solution Section */}
-      <section className="py-24 px-4 bg-theme-bg tracking-[0.08em]">
+      <section className="py-24 px-4 bg-theme-bg">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-theme-primary mb-6">
