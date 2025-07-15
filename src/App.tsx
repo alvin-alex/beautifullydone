@@ -48,7 +48,7 @@ function App() {
           </h2>
           <button 
             onClick={handleCTAClick}
-            className="bg-theme-primary hover:bg-theme-primary-hover focus:bg-theme-primary-hover focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 md:px-12 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center md:space-x-3"
+            className="bg-gradient-cta hover:opacity-90 focus:opacity-90 focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 md:px-12 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center md:space-x-3"
           >
             <span>See My New Store</span>
             <ArrowRight size={20} className="hidden md:block ml-3" />
@@ -260,7 +260,7 @@ function App() {
           </h2>
           <button 
             onClick={handleCTAClick}
-            className="bg-theme-primary hover:bg-theme-primary-hover focus:bg-theme-primary-hover focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 md:px-12 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center md:space-x-3 mb-8"
+            className="bg-gradient-cta hover:opacity-90 focus:opacity-90 focus:outline-none focus:ring-4 focus:ring-theme-primary/30 text-white px-6 md:px-12 py-4 text-base font-medium rounded-lg transition-all duration-200 inline-flex items-center md:space-x-3 mb-8"
           >
             <span>See My New Store</span>
             <ArrowRight size={20} className="hidden md:block ml-3" />

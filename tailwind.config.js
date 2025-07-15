@@ -87,6 +87,7 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-cta': 'linear-gradient(135deg, #FF4E4E 0%, #FF7A7A 50%, #C259FF 100%)',
       },
     },
   },
