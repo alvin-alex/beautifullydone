@@ -49,17 +49,6 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://demo.beautifullydone.store/" />
     
-    <!-- Preload critical fonts for faster rendering -->
-    <link rel="preload" href="/src/fonts/ClashDisplay-Variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/src/fonts/ClashDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    
-    <!-- Preconnect to Google Fonts for faster Manrope fallback loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Load Manrope with font-display: swap for better performance -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
     <!-- DNS Prefetch for external resources -->
     <link rel="dns-prefetch" href="//hook.us2.make.com">
     
@@ -82,54 +71,9 @@
       "serviceType": "E-commerce Store Design and Development"
     }
     </script>
-    
-    <!-- Load critical CSS first -->
-    <style>
-      /* Inline critical font-face declarations to prevent FOUT */
-      @font-face {
-        font-family: 'ClashDisplay-Variable';
-        src: url('/src/fonts/ClashDisplay-Variable.woff2') format('woff2');
-        font-weight: 200 700;
-        font-display: swap;
-        font-style: normal;
-      }
-      
-      @font-face {
-        font-family: 'ClashDisplay-Medium';
-        src: url('/src/fonts/ClashDisplay-Medium.woff2') format('woff2');
-        font-weight: 500;
-        font-display: swap;
-        font-style: normal;
-      }
-      
-      /* Prevent layout shift with font fallback */
-      html {
-        font-family: 'ClashDisplay-Variable', 'Manrope', system-ui, sans-serif;
-      }
-      
-      /* Loading state to prevent FOUC */
-      #root {
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-      }
-      
-      #root.loaded {
-        opacity: 1;
-      }
-    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Loading optimization script -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const root = document.getElementById('root');
-        setTimeout(() => {
-          root.classList.add('loaded');
-        }, 100);
-      });
-    </script>
   </body>
 </html>
