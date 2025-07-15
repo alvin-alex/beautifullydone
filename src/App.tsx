@@ -21,6 +21,15 @@ function App() {
         <div className="absolute inset-0 bg-gradient-radial from-theme-primary/5 via-transparent to-transparent"></div>
         
         <div className="relative text-center max-w-4xl mx-auto px-4 z-10">
+          {/* Logo */}
+          <div className="mb-8">
+            <img 
+              src="/logo/11.svg" 
+              alt="Beautifully Done Logo" 
+              className="h-32 md:h-40 mx-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+            />
+          </div>
+          
           <h1 className="font-heading text-4xl md:text-6xl font-semibold mb-6 leading-tight">
             Get a Store You're <span className="text-theme-primary">Proud Of.</span><span className="font-light"> Live in</span> 24 Hours
           </h1>
