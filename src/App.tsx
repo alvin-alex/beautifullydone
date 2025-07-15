@@ -278,7 +278,7 @@ function App() {
               <img 
                 src="/logo/11.svg" 
                 alt="Beautifully Done Logo" 
-                className="h-12 opacity-80 hover:opacity-100 transition-opacity duration-200"
+                className="h-24 opacity-80 hover:opacity-100 transition-opacity duration-200"
               />
             </div>
           </div>
