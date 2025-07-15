@@ -40,8 +40,6 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
-  if (!isOpen) return null;
-
   const handleClose = () => {
     setFormData({
       name: '',
@@ -131,6 +129,8 @@ export const StoreTransformationForm: React.FC<StoreTransformationFormProps> = (
     
     return valid;
   }, []);
+
+  if (!isOpen) return null;
 
   const handleInputChange = (field: keyof FormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
